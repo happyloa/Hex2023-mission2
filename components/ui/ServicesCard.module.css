@@ -6,10 +6,24 @@
   align-items: flex-start;
   gap: 20px;
   padding: 80px 40px;
+  transition: all 0.3s ease-in-out;
+}
+
+.card img {
+  transition: all 0.3s ease-in-out;
 }
 
 .card h3 {
   font-size: 32px;
   font-weight: 900;
   line-height: 38.4px;
+}
+
+.card:hover {
+  background-color: #fff;
+  color: #020202;
+}
+
+.card:hover img {
+  filter: brightness(0);
 }
