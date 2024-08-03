@@ -4,12 +4,14 @@ export const metadata = {
 
 import HomeTitle from "@/components/home/HomeTitle";
 import DecoAnimation from "@/components/ui/DecoAnimation";
+import OurServices from "@/components/home/OurServices";
 
 export default function Home() {
   return (
     <>
       <HomeTitle />
       <DecoAnimation align="end" />
+      <OurServices />
     </>
   );
 }
