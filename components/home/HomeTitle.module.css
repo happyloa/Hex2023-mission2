@@ -1,0 +1,16 @@
+.container {
+  max-width: 1296px;
+  padding: 40px 12px 0;
+  margin: 0 auto 100px;
+}
+
+.title {
+  font-size: 120px;
+  font-weight: 900;
+  line-height: 144px;
+  margin: 0 0 40px;
+}
+
+.responsive-break {
+  display: none;
+}
