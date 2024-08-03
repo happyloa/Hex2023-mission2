@@ -14,3 +14,18 @@
 .responsive-break {
   display: none;
 }
+
+@media (max-width: 576px) {
+  .container {
+    margin: 0 auto 180px;
+  }
+
+  .title {
+    font-size: 48px;
+    line-height: 57.6px;
+  }
+
+  .responsive-break {
+    display: block;
+  }
+}

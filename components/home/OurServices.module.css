@@ -33,3 +33,34 @@
   display: flex;
   gap: 20px;
 }
+
+@media (max-width: 576px) {
+  .container {
+    margin: 0 auto 120px;
+  }
+
+  .contentWrapper {
+    flex-direction: column;
+    gap: 24px;
+    margin: 0 0 48px;
+  }
+
+  .titleWrapper,
+  .paragraphWrapper {
+    width: 100%;
+  }
+
+  .titleWrapper h2 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .paragraphWrapper p {
+    font-size: 32px;
+    line-height: 38.4px;
+  }
+
+  .cardWrapper {
+    flex-wrap: wrap;
+  }
+}

@@ -27,3 +27,9 @@
 .card:hover img {
   filter: brightness(0);
 }
+
+@media (max-width: 576px) {
+  .card {
+    padding: 40px 20px;
+  }
+}

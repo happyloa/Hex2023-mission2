@@ -46,3 +46,16 @@
     transform: translateY(-100%);
   }
 }
+
+@media (max-width: 576px) {
+  .container {
+    justify-content: center;
+    margin: 0 auto 120px;
+  }
+
+  .deco1,
+  .deco2,
+  .deco3 {
+    max-width: 117px;
+  }
+}
