@@ -5,6 +5,7 @@ export const metadata = {
 import HomeTitle from "@/components/home/HomeTitle";
 import DecoAnimation from "@/components/ui/DecoAnimation";
 import OurServices from "@/components/home/OurServices";
+import OurClients from "@/components/home/OurClients";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <HomeTitle />
       <DecoAnimation align="end" />
       <OurServices />
+      <OurClients />
     </>
   );
 }
