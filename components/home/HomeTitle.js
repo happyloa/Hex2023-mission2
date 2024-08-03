@@ -1,5 +1,7 @@
 import styles from "./HomeTitle.module.css";
 
+import StartUsingBtn from "../ui/StartUsingBtn";
+
 export default function HomeTitle() {
   return (
     <section className={styles.container}>
@@ -14,6 +16,7 @@ export default function HomeTitle() {
         <br className={styles["responsive-break"]} />
         更聰明
       </h1>
+      <StartUsingBtn />
     </section>
   );
 }
