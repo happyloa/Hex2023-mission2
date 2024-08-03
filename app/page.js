@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <HomeTitle />
-      <DecoAnimation />
+      <DecoAnimation align="end" />
     </>
   );
 }
