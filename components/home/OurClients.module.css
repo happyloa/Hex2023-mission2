@@ -1,0 +1,32 @@
+.container {
+  max-width: 1296px;
+  padding: 0 12px;
+  margin: 0 auto 160px;
+}
+
+.heading {
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 38.4px;
+  margin: 0 0 80px;
+}
+
+.marquee1 {
+  margin: 0 0 20px;
+}
+
+@media (max-width: 576px) {
+  .container {
+    margin: 0 auto 48px;
+  }
+
+  .heading {
+    font-size: 20px;
+    line-height: 24px;
+    margin: 0 0 24px;
+  }
+
+  .marquee1 {
+    margin: 0 0 12px;
+  }
+}
