@@ -1,0 +1,35 @@
+.container {
+  max-width: 1296px;
+  padding: 0 12px;
+  margin: 0 auto 160px;
+}
+
+.contentWrapper {
+  display: flex;
+  margin: 0 0 80px;
+}
+
+.titleWrapper {
+  width: calc(100% / 3);
+}
+
+.titleWrapper h2 {
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 38.4px;
+}
+
+.paragraphWrapper {
+  width: calc((100% / 3) * 2);
+}
+
+.paragraphWrapper p {
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 57.6px;
+}
+
+.cardWrapper {
+  display: flex;
+  gap: 20px;
+}
