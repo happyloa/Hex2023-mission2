@@ -15,6 +15,7 @@ a {
 
 @media (prefers-color-scheme: dark) {
   html {
+    background-color: #020202;
     color-scheme: dark;
   }
 }
