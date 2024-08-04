@@ -4,32 +4,32 @@
   margin: 0 auto 160px;
 }
 
-.contentWrapper {
+.content-wrapper {
   display: flex;
   margin: 0 0 80px;
 }
 
-.titleWrapper {
+.title-wrapper {
   width: calc(100% / 3);
 }
 
-.titleWrapper h2 {
+.title-wrapper h2 {
   font-size: 32px;
   font-weight: 900;
   line-height: 38.4px;
 }
 
-.paragraphWrapper {
+.paragraph-wrapper {
   width: calc((100% / 3) * 2);
 }
 
-.paragraphWrapper p {
+.paragraph-wrapper p {
   font-size: 48px;
   font-weight: 900;
   line-height: 57.6px;
 }
 
-.cardWrapper {
+.card-wrapper {
   display: flex;
   gap: 20px;
 }
@@ -39,28 +39,28 @@
     margin: 0 auto 120px;
   }
 
-  .contentWrapper {
+  .content-wrapper {
     flex-direction: column;
     gap: 24px;
     margin: 0 0 48px;
   }
 
-  .titleWrapper,
-  .paragraphWrapper {
+  .title-wrapper,
+  .paragraph-wrapper {
     width: 100%;
   }
 
-  .titleWrapper h2 {
+  .title-wrapper h2 {
     font-size: 20px;
     line-height: 24px;
   }
 
-  .paragraphWrapper p {
+  .paragraph-wrapper p {
     font-size: 32px;
     line-height: 38.4px;
   }
 
-  .cardWrapper {
+  .card-wrapper {
     flex-wrap: wrap;
   }
 }

@@ -25,11 +25,11 @@ const servicesCardInfo = [
 export default function OurServices() {
   return (
     <section className={styles.container}>
-      <div className={styles.contentWrapper}>
-        <div className={styles.titleWrapper}>
+      <div className={styles["content-wrapper"]}>
+        <div className={styles["title-wrapper"]}>
           <h2>我們的服務</h2>
         </div>
-        <div className={styles.paragraphWrapper}>
+        <div className={styles["paragraph-wrapper"]}>
           <p>
             我們相信透過 AI 技術，
             <br />
@@ -37,7 +37,7 @@ export default function OurServices() {
           </p>
         </div>
       </div>
-      <ul className={styles.cardWrapper}>
+      <ul className={styles["card-wrapper"]}>
         {servicesCardInfo.map((service, idx) => (
           <ServicesCard
             key={idx}
