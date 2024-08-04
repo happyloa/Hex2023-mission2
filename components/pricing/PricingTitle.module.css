@@ -1,0 +1,46 @@
+.container {
+  max-width: 1296px;
+  padding: 40px 12px 0;
+  margin: 0 auto 240px;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.content-container h1 {
+  font-size: 120px;
+  font-weight: 900;
+  line-height: 144px;
+}
+
+.content-container p {
+  align-self: flex-end;
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 57.6px;
+  max-width: 50%;
+}
+
+@media (max-width: 576px) {
+  .container {
+    margin: 0 auto 260px;
+  }
+
+  .content-container {
+    gap: 64px;
+  }
+
+  .content-container h1 {
+    font-size: 48px;
+    line-height: 57.6px;
+  }
+
+  .content-container p {
+    font-size: 28px;
+    line-height: 33.6px;
+    max-width: 66%;
+  }
+}
