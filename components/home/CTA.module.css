@@ -1,0 +1,37 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  max-width: 1296px;
+  padding: 80px 12px;
+  margin: 80px auto;
+}
+
+.heading {
+  font-size: 48px;
+  font-weight: 900;
+  text-align: center;
+  line-height: 57.6px;
+}
+
+.responsive-break {
+  display: none;
+}
+
+@media (max-width: 576px) {
+  .container {
+    gap: 32px;
+    padding: 120px 12px;
+    margin: 40px auto;
+  }
+
+  .heading {
+    font-size: 32px;
+    line-height: 38.4px;
+  }
+
+  .responsive-break {
+    display: block;
+  }
+}
