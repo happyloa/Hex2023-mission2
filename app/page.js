@@ -6,6 +6,7 @@ import HomeTitle from "@/components/home/HomeTitle";
 import DecoAnimation from "@/components/ui/DecoAnimation";
 import OurServices from "@/components/home/OurServices";
 import OurClients from "@/components/home/OurClients";
+import Testimonial from "@/components/home/Testimonial";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <DecoAnimation align="end" />
       <OurServices />
       <OurClients />
+      <Testimonial />
     </>
   );
 }
