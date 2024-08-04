@@ -4,12 +4,14 @@ export const metadata = {
 
 import PricingTitle from "@/components/pricing/PricingTitle";
 import DecoAnimation from "@/components/ui/DecoAnimation";
+import AiModelsPricing from "@/components/pricing/AiModelsPricing";
 
 export default function Pricing() {
   return (
     <>
       <PricingTitle />
       <DecoAnimation align="start" />
+      <AiModelsPricing />
     </>
   );
 }
