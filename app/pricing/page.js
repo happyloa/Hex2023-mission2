@@ -3,11 +3,13 @@ export const metadata = {
 };
 
 import PricingTitle from "@/components/pricing/PricingTitle";
+import DecoAnimation from "@/components/ui/DecoAnimation";
 
 export default function Pricing() {
   return (
     <>
       <PricingTitle />
+      <DecoAnimation align="start" />
     </>
   );
 }
