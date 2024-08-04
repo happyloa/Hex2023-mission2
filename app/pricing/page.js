@@ -6,6 +6,7 @@ import PricingTitle from "@/components/pricing/PricingTitle";
 import DecoAnimation from "@/components/ui/DecoAnimation";
 import AiModelsPricing from "@/components/pricing/AiModelsPricing";
 import UsageRegulation from "@/components/pricing/UsageRegulation";
+import AiToolsList from "@/components/AiToolsList";
 
 export default function Pricing() {
   return (
@@ -14,6 +15,7 @@ export default function Pricing() {
       <DecoAnimation align="start" />
       <AiModelsPricing />
       <UsageRegulation />
+      <AiToolsList />
     </>
   );
 }
