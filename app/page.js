@@ -7,6 +7,7 @@ import DecoAnimation from "@/components/ui/DecoAnimation";
 import OurServices from "@/components/home/OurServices";
 import OurClients from "@/components/home/OurClients";
 import Testimonial from "@/components/home/Testimonial";
+import CTA from "@/components/home/CTA";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <OurServices />
       <OurClients />
       <Testimonial />
+      <CTA />
     </>
   );
 }
