@@ -5,6 +5,7 @@ export const metadata = {
 import PricingTitle from "@/components/pricing/PricingTitle";
 import DecoAnimation from "@/components/ui/DecoAnimation";
 import AiModelsPricing from "@/components/pricing/AiModelsPricing";
+import UsageRegulation from "@/components/pricing/UsageRegulation";
 
 export default function Pricing() {
   return (
@@ -12,6 +13,7 @@ export default function Pricing() {
       <PricingTitle />
       <DecoAnimation align="start" />
       <AiModelsPricing />
+      <UsageRegulation />
     </>
   );
 }
