@@ -2,6 +2,8 @@ import Link from "next/link";
 
 import styles from "./Header.module.css";
 
+import MobileNav from "./MobileNav";
+
 export default function Header() {
   return (
     <header className={styles.container}>
@@ -10,9 +12,14 @@ export default function Header() {
           <img src="image/logo.webp" className={styles["site-logo"]} />
         </Link>
         <nav className={styles["desktop-nav"]}>
-          <Link href="/">首頁</Link>
-          <Link href="/pricing">定價</Link>
+          <Link href="/" className={styles.link}>
+            首頁
+          </Link>
+          <Link href="/pricing" className={styles.link}>
+            定價
+          </Link>
         </nav>
+        <MobileNav />
       </div>
     </header>
   );
