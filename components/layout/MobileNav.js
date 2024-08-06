@@ -13,6 +13,10 @@ export default function MobileNav() {
     setIsOpen(!isOpen);
   }
 
+  function closeModal() {
+    setIsOpen(false);
+  }
+
   return (
     <>
       <img
@@ -46,8 +50,12 @@ export default function MobileNav() {
           },
         }}>
         <nav className={styles["mobile-nav"]}>
-          <Link href="/">首頁</Link>
-          <Link href="/pricing">定價</Link>
+          <Link href="/" onClick={closeModal}>
+            首頁
+          </Link>
+          <Link href="/pricing" onClick={closeModal}>
+            定價
+          </Link>
         </nav>
         <footer className={styles["mobile-nav-footer"]}>
           <p>AI工具王 © 2023</p>
