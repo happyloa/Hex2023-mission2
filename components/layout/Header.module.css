@@ -1,0 +1,23 @@
+.container {
+  padding: 0 12px;
+}
+
+.wrapper {
+  border-bottom: 1px solid #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1296px;
+  padding: 20px 0;
+  margin: 0 auto;
+}
+
+.site-logo {
+  width: 245px;
+}
+
+.desktop-nav {
+  font-weight: 700;
+  display: flex;
+  gap: 20px;
+}
