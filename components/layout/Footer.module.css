@@ -55,6 +55,7 @@
 
 .site-infos {
   display: flex;
+  flex-wrap: wrap;
   font-weight: 700;
   max-width: 1296px;
   padding: 20px 0;
@@ -92,9 +93,12 @@
   }
 
   .site-infos {
-    flex-wrap: wrap;
     row-gap: 32px;
     padding: 32px 0;
+  }
+
+  .site-infos p {
+    margin: 0;
   }
 
   .site-infos .social-links {
