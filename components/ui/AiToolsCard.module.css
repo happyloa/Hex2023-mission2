@@ -1,0 +1,60 @@
+/* 工具樣式 */
+.card-padding {
+  padding: 20px 32px !important;
+}
+
+/* 工具樣式 */
+.d-flex {
+  display: flex !important;
+  justify-content: space-between !important;
+}
+
+.card {
+  border: 1px solid #f2f2f2;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.img-wrapper {
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  overflow: hidden;
+}
+
+.img-wrapper img {
+  display: block;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover .img-wrapper img {
+  transform: scale(1.1) rotate(2deg);
+}
+
+.content-wrapper h3 {
+  color: #020202;
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 24px;
+  margin: 0 0 12px;
+}
+
+.content-wrapper p {
+  color: #525252;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.ai-model-wrapper {
+  border-top: 1px solid #f2f2f2;
+  border-bottom: 1px solid #f2f2f2;
+  color: #020202;
+}
+
+.ai-model-wrapper h4 {
+  font-weight: 700;
+}
+
+.tag-and-share-wrapper {
+  color: #020202;
+}
