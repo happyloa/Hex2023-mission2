@@ -1,8 +1,12 @@
 .container {
-  display: flex;
-  max-width: 1296px;
   padding: 0 12px;
   margin: 0 auto 160px;
+}
+
+.wrapper {
+  display: flex;
+  max-width: 1296px;
+  margin: 0 auto;
   overflow: hidden;
 }
 
@@ -49,8 +53,12 @@
 
 @media (max-width: 576px) {
   .container {
-    justify-content: center;
+    padding: 0 12px;
     margin: 0 auto 120px;
+  }
+
+  .wrapper {
+    justify-content: center;
   }
 
   .deco1,

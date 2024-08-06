@@ -32,18 +32,20 @@ const testimonials = [
 export default function Testimonial() {
   return (
     <section className={styles.container}>
-      <ul className={styles["card-wrapper"]}>
-        {testimonials.map((testimonial, index) => (
-          <TestimonialCard
-            key={index}
-            rating={testimonial.rating}
-            content={testimonial.content}
-            clientName={testimonial.clientName}
-            clientCompany={testimonial.clientCompany}
-            clientImage={testimonial.clientImage}
-          />
-        ))}
-      </ul>
+      <div className={styles.wrapper}>
+        <ul className={styles["card-wrapper"]}>
+          {testimonials.map((testimonial, index) => (
+            <TestimonialCard
+              key={index}
+              rating={testimonial.rating}
+              content={testimonial.content}
+              clientName={testimonial.clientName}
+              clientCompany={testimonial.clientCompany}
+              clientImage={testimonial.clientImage}
+            />
+          ))}
+        </ul>
+      </div>
     </section>
   );
 }

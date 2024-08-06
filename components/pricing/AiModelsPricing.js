@@ -32,12 +32,14 @@ const aiModelsInfo = [
 export default function AiModelsPricing() {
   return (
     <section className={styles.container}>
-      <h2 className={styles.heading}>定價</h2>
-      <ul className={styles["card-wrapper"]}>
-        {aiModelsInfo.map((data, index) => (
-          <AiModelsPricingCard key={index} {...data} />
-        ))}
-      </ul>
+      <div className={styles.wrapper}>
+        <h2 className={styles.heading}>定價</h2>
+        <ul className={styles["card-wrapper"]}>
+          {aiModelsInfo.map((data, index) => (
+            <AiModelsPricingCard key={index} {...data} />
+          ))}
+        </ul>
+      </div>
     </section>
   );
 }

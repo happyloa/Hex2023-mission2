@@ -1,7 +1,11 @@
 .container {
+  padding: 0 12px;
+  margin: 40px auto 100px;
+}
+
+.wrapper {
   max-width: 1296px;
-  padding: 40px 12px 0;
-  margin: 0 auto 100px;
+  margin: 0 auto;
 }
 
 .title {
@@ -15,14 +19,16 @@
   display: none;
 }
 
-@media (max-width: 576px) {
-  .container {
-    margin: 0 auto 180px;
-  }
-
+@media (max-width: 768px) {
   .title {
     font-size: 48px;
     line-height: 57.6px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    margin: 40px auto 180px;
   }
 
   .responsive-break {

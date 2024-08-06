@@ -1,11 +1,14 @@
 .container {
+  padding: 160px 12px;
+}
+
+.wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 40px;
   max-width: 1296px;
-  padding: 80px 12px;
-  margin: 80px auto;
+  margin: 0 auto;
 }
 
 .heading {
@@ -20,10 +23,8 @@
 }
 
 @media (max-width: 576px) {
-  .container {
+  .wrapper {
     gap: 32px;
-    padding: 120px 12px;
-    margin: 40px auto;
   }
 
   .heading {

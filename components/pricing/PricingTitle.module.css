@@ -1,7 +1,11 @@
 .container {
+  padding: 0 12px;
+  margin: 40px auto 240px;
+}
+
+.wrapper {
   max-width: 1296px;
-  padding: 40px 12px 0;
-  margin: 0 auto 240px;
+  margin: 0 auto;
 }
 
 .content-container {
@@ -26,7 +30,7 @@
 
 @media (max-width: 576px) {
   .container {
-    margin: 0 auto 260px;
+    margin: 40px auto 260px;
   }
 
   .content-container {
@@ -41,6 +45,6 @@
   .content-container p {
     font-size: 28px;
     line-height: 33.6px;
-    max-width: 66%;
+    max-width: 73%;
   }
 }
