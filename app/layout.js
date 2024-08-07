@@ -14,6 +14,16 @@ import Footer from "@/components/layout/Footer";
 export const metadata = {
   title: "2023 體驗營切版任務二",
   description: "2023 體驗營切版任務二 by Aaron",
+  openGraph: {
+    images: [
+      {
+        url: "image/og-image.webp",
+        width: 1200,
+        height: 630,
+        alt: "2023 體驗營切版任務二",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({ children }) {
