@@ -1,0 +1,41 @@
+.accordion-item {
+  background-color: #020202;
+  border: 1px solid #525252;
+  border-radius: 16px;
+}
+
+.accordion-button {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  gap: 20px;
+  font-size: 20px;
+  font-weight: 900;
+  padding: 20px 40px;
+  background-color: transparent;
+  border: 0;
+  overflow-anchor: none;
+}
+
+.accordion-button:after {
+  width: 24px;
+  height: 24px;
+  content: "";
+  background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/icons/add.png?raw=true");
+  background-repeat: no-repeat;
+  transition: transform 0.3s ease-in-out;
+}
+
+.accordion-button:not(.collapsed):after {
+  background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/icons/remove.png?raw=true");
+  transform: rotate(-180deg);
+}
+
+.accordion-button:not(.collapsed) {
+  color: #f18724;
+  background-color: transparent;
+}
+
+.accordion-body {
+  padding: 20px 40px;
+}
