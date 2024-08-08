@@ -1,5 +1,6 @@
 import styles from "./AiToolsList.module.css";
 
+import AiToolsSearchForm from "./AiToolsSearchForm";
 import AiToolsCard from "./ui/AiToolsCard";
 import AiToolsPagination from "./AiToolsPagination";
 
@@ -56,6 +57,7 @@ export default function AiToolsList() {
     <section className={styles.container}>
       <h2 className={styles.heading}>這些超酷的應用，都來自 AI工具王</h2>
       <main className={styles.wrapper}>
+        <AiToolsSearchForm />
         <ul className={styles["card-wrapper"]}>
           {toolsData.map((tool, index) => (
             <AiToolsCard
