@@ -1,6 +1,6 @@
 import { Accordion } from "react-bootstrap-accordion";
 
-import "react-bootstrap-accordion/dist/index.css";
+import "./SingleAccordion.css";
 
 export default function SingleAccordion({ title, content }) {
   if (typeof window !== "undefined") {
