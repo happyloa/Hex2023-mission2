@@ -1,5 +1,3 @@
-"use client";
-
 import styles from "./FAQ.module.css";
 
 import SingleAccordion from "../ui/SingleAccordion";
