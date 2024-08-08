@@ -21,13 +21,13 @@
   width: 24px;
   height: 24px;
   content: "";
-  background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/icons/add.png?raw=true");
+  background-image: url("~/public/image/icons/add.webp");
   background-repeat: no-repeat;
   transition: transform 0.3s ease-in-out;
 }
 
 .accordion-button:not(.collapsed):after {
-  background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/icons/remove.png?raw=true");
+  background-image: url("~/public/image/icons/remove.webp");
   transform: rotate(-180deg);
 }
 
