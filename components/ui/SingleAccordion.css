@@ -5,10 +5,14 @@
 }
 
 .accordion-button {
+  cursor: pointer;
   display: flex;
   flex-direction: row-reverse;
   justify-content: flex-end;
+  align-items: center;
+  width: 100%;
   gap: 20px;
+  text-align: left;
   font-size: 20px;
   font-weight: 900;
   padding: 20px 40px;
@@ -22,8 +26,7 @@
   height: 24px;
   content: "";
   background-image: url("~/public/image/icons/add.webp");
-  background-repeat: no-repeat;
-  transition: transform 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .accordion-button:not(.collapsed):after {
@@ -33,9 +36,19 @@
 
 .accordion-button:not(.collapsed) {
   color: #f18724;
-  background-color: transparent;
 }
 
 .accordion-body {
   padding: 20px 40px;
+}
+
+@media (max-width: 576px) {
+  .accordion-button,
+  .accordion-body {
+    padding: 20px;
+  }
+
+  .accordion-body {
+    text-align: justify;
+  }
 }

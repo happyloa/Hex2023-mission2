@@ -16,6 +16,8 @@
   font-size: 32px;
   font-weight: 900;
   line-height: 38.4px;
+  position: sticky;
+  top: 115px;
 }
 
 .faq-wrapper {
@@ -23,4 +25,25 @@
   flex-direction: column;
   gap: 16px;
   width: calc((100% / 3) * 2);
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding: 120px 12px;
+  }
+
+  .wrapper {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .title-wrapper,
+  .faq-wrapper {
+    width: 100%;
+  }
+
+  .title-wrapper h2 {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
