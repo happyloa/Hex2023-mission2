@@ -1,3 +1,7 @@
+"use client";
+
+import { useState } from "react";
+
 import styles from "./AiToolsList.module.css";
 
 import AiToolsSearchForm from "./AiToolsSearchForm";
@@ -53,13 +57,26 @@ const toolsData = [
 ];
 
 export default function AiToolsList() {
+  const [filteredData, setFilteredData] = useState(toolsData);
+
+  const handleSearch = (searchTerm) => {
+    if (searchTerm === "") {
+      setFilteredData(toolsData);
+    } else {
+      const filtered = toolsData.filter((tool) =>
+        tool.title.toLowerCase().includes(searchTerm.toLowerCase())
+      );
+      setFilteredData(filtered);
+    }
+  };
+
   return (
     <section className={styles.container}>
       <h2 className={styles.heading}>這些超酷的應用，都來自 AI工具王</h2>
       <main className={styles.wrapper}>
-        <AiToolsSearchForm />
+        <AiToolsSearchForm onSearch={handleSearch} />
         <ul className={styles["card-wrapper"]}>
-          {toolsData.map((tool, index) => (
+          {filteredData.map((tool, index) => (
             <AiToolsCard
               key={index}
               imgSrc={tool.imgSrc}
