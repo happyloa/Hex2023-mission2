@@ -1,0 +1,29 @@
+.pagination ul {
+  color: #020202;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 4px;
+}
+
+.pagination ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 16px;
+  transition: all 0.3s ease-in-out;
+}
+
+.pagination ul li a:hover {
+  background-color: #020202;
+  color: #ffffff;
+}
+
+.pagination ul li:first-of-type a {
+  background-color: #020202;
+  color: #ffffff;
+}
