@@ -1,6 +1,7 @@
 import styles from "./AiToolsList.module.css";
 
 import AiToolsCard from "./ui/AiToolsCard";
+import AiToolsPagination from "./AiToolsPagination";
 
 const toolsData = [
   {
@@ -67,6 +68,7 @@ export default function AiToolsList() {
             />
           ))}
         </ul>
+        <AiToolsPagination />
       </main>
     </section>
   );
