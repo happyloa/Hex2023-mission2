@@ -76,16 +76,20 @@ export default function AiToolsList() {
       <main className={styles.wrapper}>
         <AiToolsSearchForm onSearch={handleSearch} />
         <ul className={styles["card-wrapper"]}>
-          {filteredData.map((tool, index) => (
-            <AiToolsCard
-              key={index}
-              imgSrc={tool.imgSrc}
-              title={tool.title}
-              description={tool.description}
-              modelName={tool.modelName}
-              tag={tool.tag}
-            />
-          ))}
+          {filteredData.length > 0 ? (
+            filteredData.map((tool, index) => (
+              <AiToolsCard
+                key={index}
+                imgSrc={tool.imgSrc}
+                title={tool.title}
+                description={tool.description}
+                modelName={tool.modelName}
+                tag={tool.tag}
+              />
+            ))
+          ) : (
+            <li className={styles["no-tools"]}>我們目前沒有這個 AI 工具😢</li>
+          )}
         </ul>
         <AiToolsPagination />
       </main>

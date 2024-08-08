@@ -25,6 +25,13 @@
   margin: 0 0 40px;
 }
 
+.no-tools {
+  color: #020202;
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 38.4px;
+}
+
 @media (max-width: 1024px) {
   .container {
     border-radius: 20px;
