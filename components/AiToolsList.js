@@ -71,7 +71,7 @@ export default function AiToolsList() {
   };
 
   return (
-    <section className={styles.container}>
+    <section className={styles.container} id="ai-tools">
       <h2 className={styles.heading}>這些超酷的應用，都來自 AI工具王</h2>
       <main className={styles.wrapper}>
         <AiToolsSearchForm onSearch={handleSearch} />
