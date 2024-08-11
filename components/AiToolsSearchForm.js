@@ -17,16 +17,13 @@ export default function AiToolsSearchForm({ onSearch }) {
   };
 
   return (
-    // 定義一個表單，用於包裹搜尋輸入框
-    <form>
-      {/* 輸入框，用於接收用戶輸入的搜尋關鍵字 */}
-      <input
-        type="text" // 輸入框類型為文字
-        className={styles["search-input"]} // 應用 search-input 樣式類別來控制輸入框的外觀
-        placeholder="輸入關鍵字搜尋" // 在輸入框中顯示提示文字
-        value={searchTerm} // 將輸入框的值綁定到 searchTerm 狀態
-        onChange={handleInputChange} // 當輸入框的值發生變化時觸發 handleInputChange 函數
-      />
-    </form>
+    // 輸入框，用於接收用戶輸入的搜尋關鍵字
+    <input
+      type="text" // 輸入框類型為文字
+      className={styles["search-input"]} // 應用 search-input 樣式類別來控制輸入框的外觀
+      placeholder="輸入關鍵字搜尋" // 在輸入框中顯示提示文字
+      value={searchTerm} // 將輸入框的值綁定到 searchTerm 狀態
+      onChange={handleInputChange} // 當輸入框的值發生變化時觸發 handleInputChange 函數
+    />
   );
 }
