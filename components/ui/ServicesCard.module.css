@@ -1,5 +1,5 @@
 .card {
-  border: 1px solid #525252;
+  border: 1px solid var(--black80);
   border-radius: 16px;
   display: flex;
   flex-direction: column;
@@ -15,14 +15,14 @@
 }
 
 .card h3 {
-  font-size: 32px;
-  font-weight: 900;
+  font-size: var(--m);
+  font-weight: var(--bolder);
   line-height: 38.4px;
 }
 
 .card:hover {
-  background-color: #fff;
-  color: #020202;
+  background-color: var(--white);
+  color: var(--black);
 }
 
 .card:hover img {

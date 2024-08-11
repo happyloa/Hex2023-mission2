@@ -17,8 +17,8 @@
 }
 
 .title-wrapper h2 {
-  font-size: 32px;
-  font-weight: 900;
+  font-size: var(--m);
+  font-weight: var(--bolder);
   line-height: 38.4px;
 }
 
@@ -34,14 +34,14 @@
 }
 
 .regulations-wrapper h3 {
-  font-size: 48px;
-  font-weight: 900;
+  font-size: var(--xl);
+  font-weight: var(--bolder);
   line-height: 57.6px;
   margin: 0 0 24px;
 }
 
 .regulations-wrapper p {
-  font-size: 32px;
+  font-size: var(--m);
   line-height: 38.4px;
   margin: 0 0 40px;
 }
@@ -62,8 +62,7 @@
   }
 
   .title-wrapper h2 {
-    font-size: 20px;
-    line-height: 24px;
+    font-size: var(--xxs);
   }
 
   .regulations-wrapper {
@@ -71,12 +70,12 @@
   }
 
   .regulations-wrapper h3 {
-    font-size: 32px;
+    font-size: var(--m);
     line-height: 38.4px;
   }
 
   .regulations-wrapper p {
-    font-size: 16px;
+    font-size: var(--xxxs);
     line-height: 24px;
   }
 }

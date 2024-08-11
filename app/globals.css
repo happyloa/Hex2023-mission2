@@ -9,12 +9,12 @@
 }
 
 *::selection {
-  background-color: #f18724;
+  background-color: var(--primary);
 }
 
 html {
-  background-color: #020202;
-  color: #ffffff;
+  background-color: var(--black);
+  color: var(--white);
 }
 
 a {

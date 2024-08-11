@@ -1,11 +1,11 @@
 .accordion-item {
-  background-color: #020202;
-  border: 1px solid #525252;
+  background-color: var(--black);
+  border: 1px solid var(--black80);
   border-radius: 16px;
 }
 
 .accordion-button {
-  color: #ffffff;
+  color: var(--white);
   cursor: pointer;
   display: flex;
   flex-direction: row-reverse;
@@ -14,8 +14,8 @@
   width: 100%;
   gap: 20px;
   text-align: left;
-  font-size: 20px;
-  font-weight: 900;
+  font-size: var(--xxs);
+  font-weight: var(--bolder);
   padding: 20px 40px;
   background-color: transparent;
   border: 0;
@@ -36,11 +36,11 @@
 }
 
 .accordion-button:not(.collapsed) {
-  color: #f18724;
+  color: var(--primary);
 }
 
 .accordion-body {
-  color: #ffffff;
+  color: var(--white);
   padding: 20px 40px;
 }
 

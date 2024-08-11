@@ -12,7 +12,7 @@
 }
 
 .content {
-  color: #f2f2f2;
+  color: var(--black20);
   height: 215px;
   overflow-y: auto;
 }
@@ -34,7 +34,7 @@
 }
 
 .client-info strong {
-  font-weight: 700;
+  font-weight: var(--bold);
 }
 
 .client-info span {

@@ -1,5 +1,5 @@
 .card {
-  border: 1px solid #525252;
+  border: 1px solid var(--black80);
   border-radius: 16px;
   cursor: pointer;
   display: flex;
@@ -10,8 +10,8 @@
 }
 
 .card:hover {
-  background-color: #fff;
-  color: #020202;
+  background-color: var(--white);
+  color: var(--black);
 }
 
 .wrapper {
@@ -19,8 +19,8 @@
 }
 
 .wrapper h3 {
-  font-size: 32px;
-  font-weight: 900;
+  font-size: var(--m);
+  font-weight: var(--bolder);
   line-height: 38.4px;
   margin: 0 0 12px;
 }
@@ -34,25 +34,25 @@
 }
 
 .card footer {
-  border-top: 1px solid #525252;
+  border-top: 1px solid var(--black80);
   display: flex;
   justify-content: space-between;
   padding: 20px 32px;
 }
 
 .card footer h4 {
-  font-size: 20px;
-  font-weight: 900;
+  font-size: var(--xxs);
+  font-weight: var(--bolder);
   line-height: 24px;
 }
 
 .card footer span {
-  color: #919191;
+  color: var(--black60);
   font-weight: 400;
 }
 
 .card footer .start-using {
-  font-weight: 700;
+  font-weight: var(--bold);
   display: flex;
   align-items: center;
   gap: 12px;

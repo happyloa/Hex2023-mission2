@@ -10,7 +10,7 @@
 }
 
 .card {
-  border: 1px solid #f2f2f2;
+  border: 1px solid var(--black20);
   border-radius: 16px;
   cursor: pointer;
 }
@@ -32,29 +32,28 @@
 }
 
 .content-wrapper h3 {
-  color: #020202;
-  font-size: 20px;
-  font-weight: 900;
-  line-height: 24px;
+  color: var(--black);
+  font-size: var(--xxs);
+  font-weight: var(--bolder);
   margin: 0 0 12px;
 }
 
 .content-wrapper p {
-  color: #525252;
+  color: var(--black80);
   font-size: 14px;
   line-height: 21px;
 }
 
 .ai-model-wrapper {
-  border-top: 1px solid #f2f2f2;
-  border-bottom: 1px solid #f2f2f2;
-  color: #020202;
+  border-top: 1px solid var(--black20);
+  border-bottom: 1px solid var(--black20);
+  color: var(--black);
 }
 
 .ai-model-wrapper h4 {
-  font-weight: 700;
+  font-weight: var(--bold);
 }
 
 .tag-and-share-wrapper {
-  color: #020202;
+  color: var(--black);
 }

@@ -15,15 +15,15 @@
 }
 
 .content-container h1 {
-  font-size: 120px;
-  font-weight: 900;
+  font-size: var(--xxxl);
+  font-weight: var(--bolder);
   line-height: 144px;
 }
 
 .content-container p {
   align-self: flex-end;
-  font-size: 48px;
-  font-weight: 900;
+  font-size: var(--xl);
+  font-weight: var(--bolder);
   line-height: 57.6px;
   max-width: 50%;
 }
@@ -38,12 +38,12 @@
   }
 
   .content-container h1 {
-    font-size: 48px;
+    font-size: var(--xl);
     line-height: 57.6px;
   }
 
   .content-container p {
-    font-size: 28px;
+    font-size: var(--s);
     line-height: 33.6px;
     max-width: 73%;
   }

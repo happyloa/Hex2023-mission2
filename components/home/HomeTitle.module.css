@@ -9,8 +9,8 @@
 }
 
 .title {
-  font-size: 120px;
-  font-weight: 900;
+  font-size: var(--xxxl);
+  font-weight: var(--bolder);
   line-height: 144px;
   margin: 0 0 40px;
 }
@@ -21,7 +21,7 @@
 
 @media (max-width: 768px) {
   .title {
-    font-size: 48px;
+    font-size: var(--xl);
     line-height: 57.6px;
   }
 }

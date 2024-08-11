@@ -3,8 +3,8 @@
 }
 
 .container {
-  border-top: 1px solid #ffffff;
-  border-bottom: 1px solid #ffffff;
+  border-top: 1px solid var(--white);
+  border-bottom: 1px solid var(--white);
   max-width: 1296px;
   padding: 80px 0;
   margin: 0 auto;
@@ -22,8 +22,8 @@
 }
 
 .links-wrapper a {
-  font-size: 80px;
-  font-weight: 900;
+  font-size: var(--xxl);
+  font-weight: var(--bolder);
   line-height: 96px;
 }
 
@@ -39,7 +39,11 @@
   bottom: 0;
   width: 100%;
   height: 5px;
-  background-image: linear-gradient(to right, #ffffff 45%, #020202 55%);
+  background-image: linear-gradient(
+    to right,
+    var(--white) 45%,
+    var(--black) 55%
+  );
   background-size: 220% 100%;
   background-position: 100% 50%;
   transition: 0.3s ease-out;
@@ -56,7 +60,7 @@
 .site-infos {
   display: flex;
   flex-wrap: wrap;
-  font-weight: 700;
+  font-weight: var(--bold);
   max-width: 1296px;
   padding: 20px 0;
   margin: 0 auto;
@@ -88,7 +92,7 @@
   }
 
   .links-wrapper a {
-    font-size: 48px;
+    font-size: var(--xl);
     line-height: 57.6px;
   }
 

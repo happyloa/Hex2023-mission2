@@ -12,8 +12,8 @@
 }
 
 .heading {
-  font-size: 48px;
-  font-weight: 900;
+  font-size: var(--xl);
+  font-weight: var(--bolder);
   text-align: center;
   line-height: 57.6px;
 }
@@ -28,7 +28,7 @@
   }
 
   .heading {
-    font-size: 32px;
+    font-size: var(--m);
     line-height: 38.4px;
   }
 

@@ -1,10 +1,10 @@
 .button {
-  border: 1px solid #ffffff;
+  border: 1px solid var(--white);
   border-radius: 16px;
   display: inline-flex;
   gap: 12px;
-  font-size: 20px;
-  font-weight: 900;
+  font-size: var(--xxs);
+  font-weight: var(--bolder);
   padding: 20px 40px;
 }
 

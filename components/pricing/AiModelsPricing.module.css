@@ -9,8 +9,8 @@
 }
 
 .heading {
-  font-size: 32px;
-  font-weight: 900;
+  font-size: var(--m);
+  font-weight: var(--bolder);
   line-height: 38.4px;
   margin: 0 0 80px;
 }
@@ -27,8 +27,7 @@
   }
 
   .heading {
-    font-size: 20px;
-    line-height: 24px;
+    font-size: var(--xxs);
     margin: 0 0 24px;
   }
 

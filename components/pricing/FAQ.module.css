@@ -13,8 +13,8 @@
 }
 
 .title-wrapper h2 {
-  font-size: 32px;
-  font-weight: 900;
+  font-size: var(--m);
+  font-weight: var(--bolder);
   line-height: 38.4px;
   position: sticky;
   top: 115px;
@@ -43,7 +43,6 @@
   }
 
   .title-wrapper h2 {
-    font-size: 20px;
-    line-height: 24px;
+    font-size: var(--xxs);
   }
 }

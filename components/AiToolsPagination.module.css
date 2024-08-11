@@ -1,7 +1,7 @@
 .pagination ul {
-  color: #020202;
+  color: var(--black);
   font-size: 14px;
-  font-weight: 700;
+  font-weight: var(--bold);
   line-height: 21px;
   display: flex;
   justify-content: flex-end;
@@ -19,11 +19,11 @@
 }
 
 .pagination ul li a:hover {
-  background-color: #020202;
-  color: #ffffff;
+  background-color: var(--black);
+  color: var(--white);
 }
 
 .pagination ul li:first-of-type a {
-  background-color: #020202;
-  color: #ffffff;
+  background-color: var(--black);
+  color: var(--white);
 }

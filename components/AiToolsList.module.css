@@ -1,13 +1,13 @@
 .container {
-  background-color: #ffffff;
+  background-color: var(--white);
   border-radius: 160px;
   padding: 160px 12px;
 }
 
 .heading {
-  color: #020202;
-  font-size: 80px;
-  font-weight: 900;
+  color: var(--black);
+  font-size: var(--xxl);
+  font-weight: var(--bolder);
   line-height: 96px;
   text-align: center;
   margin: 0 0 80px;
@@ -26,9 +26,9 @@
 }
 
 .no-tools {
-  color: #020202;
-  font-size: 32px;
-  font-weight: 900;
+  color: var(--black);
+  font-size: var(--m);
+  font-weight: var(--bolder);
   line-height: 38.4px;
 }
 
@@ -45,7 +45,7 @@
 
 @media (max-width: 768px) {
   .heading {
-    font-size: 32px;
+    font-size: var(--m);
     line-height: 38.4px;
     margin: 0 0 32px;
   }
@@ -57,7 +57,7 @@
   }
 
   .no-tools {
-    font-size: 20px;
+    font-size: var(--xxs);
     line-height: 24px;
   }
 }
