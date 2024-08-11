@@ -1,9 +1,13 @@
+// 使用 "use client"; 宣告這個元件是用於客戶端渲染
 "use client";
 
+// 匯入樣式表，使用 CSS Modules 來確保樣式具有本地範圍作用
 import styles from "./FAQ.module.css";
 
+// 匯入 SingleAccordion 元件，用於顯示單個問答項目
 import SingleAccordion from "../ui/SingleAccordion";
 
+// 定義一個 faqContent 陣列，包含常見問題的標題和內容
 const faqContent = [
   {
     title: "如何選擇適合的 AI 模型？",
@@ -18,7 +22,7 @@ const faqContent = [
   {
     title: "如何進行付款？",
     content:
-      "付款方式可以通過網站上提供的宴上支付平台進行支付。具體而言，您可以選擇信用卡、銀行轉帳電子錢包等不同的支付方式進行支付。在支付前，您需要先登錄網站並選擇適合的租用方案，系統會自動計算出對應的租用欸用和支付金額，然後您可以選擇適合的支付方式進行支付。完成支付後，系統會自動向您提供相應的服務。",
+      "付款方式可以通過網站上提供的線上支付平台進行支付。具體而言，您可以選擇信用卡、銀行轉帳電子錢包等不同的支付方式進行支付。在支付前，您需要先登錄網站並選擇適合的租用方案，系統會自動計算出對應的租用費用和支付金額，然後您可以選擇適合的支付方式進行支付。完成支付後，系統會自動向您提供相應的服務。",
   },
   {
     title: "租用模型的期限是多久？",
@@ -32,19 +36,26 @@ const faqContent = [
   },
 ];
 
+// 定義 FAQ 元件，用於展示常見問題和回答
 export default function FAQ() {
   return (
+    // section 標籤作為 FAQ 區塊的容器，應用了 container 類別來控制佈局
     <section className={styles.container}>
+      {/* wrapper div 包裹了標題和常見問題內容，應用了 wrapper 類別來控制內部元素的排列 */}
       <div className={styles.wrapper}>
+        {/* title-wrapper div 包裹了標題部分，應用了 title-wrapper 類別來控制標題的樣式 */}
         <div className={styles["title-wrapper"]}>
+          {/* h2 標籤顯示區塊的主標題 "常見問題" */}
           <h2>常見問題</h2>
         </div>
+        {/* faq-wrapper div 包含了所有的問答項目，應用了 faq-wrapper 類別來控制佈局 */}
         <div className={styles["faq-wrapper"]}>
+          {/* 使用 map 方法遍歷 faqContent 陣列，為每個常見問題渲染一個 SingleAccordion 元件 */}
           {faqContent.map((item, idx) => (
             <SingleAccordion
-              key={idx}
-              title={item.title}
-              content={item.content}
+              key={idx} // key 屬性用來為每個渲染的項目提供唯一標識符，這對於 React 來說是必要的
+              title={item.title} // 傳遞常見問題的標題到 SingleAccordion 元件的 title 屬性
+              content={item.content} // 傳遞常見問題的內容到 SingleAccordion 元件的 content 屬性
             />
           ))}
         </div>
