@@ -1,0 +1,25 @@
+:root {
+  /* 顏色 */
+  --white: #ffffff;
+  --black20: #f2f2f2;
+  --black40: #d1d1d1;
+  --black60: #919191;
+  --black80: #525252;
+  --black: #020202;
+  --primary: #f18724;
+  --surface: #f2efe7;
+  /* 文字大小 */
+  --xxxs: 16px;
+  --xxs: 20px;
+  --xs: 24px;
+  --s: 28px;
+  --m: 32px;
+  --l: 40px;
+  --xl: 48px;
+  --xxl: 80px;
+  --xxxl: 120px;
+  /* 文字粗細度 */
+  --normal: 400;
+  --bold: 700;
+  --bolder: 900;
+}
