@@ -19,7 +19,7 @@
   width: calc((100% / 3) * 2);
 }
 
-.regulations-wrapper hgroup {
+.regulations-wrapper div {
   border-bottom: 1px solid #525252;
 }
 

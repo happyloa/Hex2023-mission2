@@ -35,10 +35,10 @@ export default function UsageRegulation() {
         */}
         <div className={styles["regulations-wrapper"]}>
           {/* 
-            使用 <hgroup> HTML 標籤來包裹每個規範的標題和內容，
+            使用 <div> HTML 標籤來包裹每個規範的標題和內容，
             這樣可以將它們作為一個整體來顯示和管理，符合語義化 HTML 的最佳實踐。
           */}
-          <hgroup>
+          <div>
             {/* 使用 <h3> HTML 標籤來顯示每個使用規範的標題。
                 在這個例子中，顯示的是 "守法"。 */}
             <h3>守法</h3>
@@ -47,15 +47,15 @@ export default function UsageRegulation() {
               這裡要求使用者遵守相關的法規和政策，不得進行任何違法違規的活動。
             */}
             <p>請遵守相關的法規和政策，不得進行任何違法違規的活動。</p>
-          </hgroup>
-          <hgroup>
+          </div>
+          <div>
             <h3>資訊安全</h3>
             <p>請務必保護好自己的帳號和密碼，不得將其透露給他人。</p>
-          </hgroup>
-          <hgroup>
+          </div>
+          <div>
             <h3>守密</h3>
             <p>需對使用過程中產生的數據負責，不得擅自泄露數據。</p>
-          </hgroup>
+          </div>
         </div>
       </div>
     </Container>
