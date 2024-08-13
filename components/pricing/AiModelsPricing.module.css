@@ -1,13 +1,3 @@
-.container {
-  padding: 0 12px;
-  margin: 0 auto 160px;
-}
-
-.wrapper {
-  max-width: 1296px;
-  margin: 0 auto;
-}
-
 .heading {
   font-size: var(--m);
   font-weight: var(--bolder);
@@ -22,10 +12,6 @@
 }
 
 @media (max-width: 576px) {
-  .container {
-    margin: 0 auto 120px;
-  }
-
   .heading {
     font-size: var(--xxs);
     margin: 0 0 24px;

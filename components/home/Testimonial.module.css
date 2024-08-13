@@ -1,23 +1,9 @@
-.container {
-  padding: 0 12px;
-  margin: 0 auto 160px;
-}
-
-.wrapper {
-  max-width: 1296px;
-  margin: 0 auto;
-}
-
 .card-wrapper {
   display: flex;
   gap: 20px;
 }
 
 @media (max-width: 768px) {
-  .container {
-    margin: 0 auto 120px;
-  }
-
   .card-wrapper {
     flex-wrap: wrap;
   }
