@@ -72,7 +72,7 @@ app
 ```
 components
 ├── home                                 首頁元件庫
-├── layout                               導覽列與頁尾元件
+├── layout                               導覽列、頁尾以及容器元件
 ├── pricing                              定價頁面元件庫
 ├── ui                                   展示性元件庫
 ├── AiToolsList.js                       AI 工具清單元件
