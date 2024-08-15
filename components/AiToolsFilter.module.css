@@ -1,0 +1,70 @@
+.filter-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin: 0 0 40px;
+}
+
+.filter {
+  border: 1px solid var(--black20);
+  border-radius: 16px;
+  color: var(--black);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-wrap: nowrap;
+  padding: 20px 32px;
+}
+
+.navigation {
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.navigation ul {
+  color: var(--black60);
+  display: flex;
+  gap: 8px;
+}
+
+.navigation ul li {
+  border-radius: 16px;
+  cursor: pointer;
+  padding: 8px 16px;
+  text-wrap: nowrap;
+  flex-shrink: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.navigation ul li:hover {
+  background-color: var(--black20);
+  color: var(--black);
+  font-weight: 700;
+}
+
+/* 工具樣式，用來套用在目前啟用的標籤上 */
+.active {
+  background-color: var(--black20);
+  color: var(--black);
+  font-weight: 700;
+}
+
+.dropdown-filter {
+  border: 1px solid var(--black20);
+  border-radius: 16px;
+  font-size: 16px;
+  padding: 20px 32px;
+}
+
+@media (max-width: 576px) {
+  .filter-container {
+    flex-wrap: wrap;
+    margin: 0 0 48px;
+  }
+
+  .navigation {
+    order: 3;
+  }
+}
