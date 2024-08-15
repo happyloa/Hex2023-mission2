@@ -5,6 +5,7 @@ import { useState } from "react";
 import styles from "./AiToolsList.module.css";
 
 import AiToolsSearchForm from "./AiToolsSearchForm";
+import AiToolsFilter from "./AiToolsFilter";
 import AiToolsCard from "./ui/AiToolsCard";
 import AiToolsPagination from "./AiToolsPagination";
 
@@ -70,11 +71,21 @@ export default function AiToolsList() {
     }
   };
 
+  const handleFilter = (tag) => {
+    if (tag === "全部") {
+      setFilteredData(toolsData);
+    } else {
+      const filtered = toolsData.filter((tool) => tool.tag === tag);
+      setFilteredData(filtered);
+    }
+  };
+
   return (
     <section className={styles.container} id="ai-tools">
       <h2 className={styles.heading}>這些超酷的應用，都來自 AI工具王</h2>
       <main className={styles.wrapper}>
         <AiToolsSearchForm onSearch={handleSearch} />
+        <AiToolsFilter onFilter={handleFilter} />
         <ul className={styles["card-wrapper"]}>
           {filteredData.length > 0 ? (
             filteredData.map((tool, index) => (
