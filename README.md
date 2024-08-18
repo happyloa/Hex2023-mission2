@@ -75,6 +75,8 @@ components
 ├── layout                               導覽列、頁尾以及容器元件
 ├── pricing                              定價頁面元件庫
 ├── ui                                   展示性元件庫
+├── AiToolsFilter.js                     AI 工具過濾器元件
+├── AiToolsFilter.module.css             AI 工具過濾器元件的樣式
 ├── AiToolsList.js                       AI 工具清單元件
 ├── AiToolsList.module.css               AI 工具清單元件的樣式
 ├── AiToolsPagination.js                 AI 工具分頁元件
