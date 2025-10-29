@@ -20,7 +20,7 @@ const testimonials = [
       "非常喜歡 AI工具王 提供的 AI 模型租賃服務，使用起來非常方便，而且效果非常好。對於我們公司的業務來說，這個服務非常重要，因為我們需要大量的數據進行分析和預測，AI工具王 提供的 AI 模型能夠幫助我們節省大量時間和成本，實在是太棒了！", // 客戶的推薦內容，描述他們對服務的滿意度。
     clientName: "陳小姐", // 提供推薦的客戶姓名。
     clientCompany: "ABC科技有限公司", // 客戶所屬公司的名稱。
-    clientImage: "image/avatars/avatar3.webp", // 客戶頭像圖片的相對路徑，用於在推薦卡片中顯示客戶的頭像。
+    clientImage: "/image/avatars/avatar3.webp", // 客戶頭像圖片的相對路徑，用於在推薦卡片中顯示客戶的頭像。
   },
   {
     rating: 5, // 這位客戶同樣給出了 5 星評分。
@@ -28,7 +28,7 @@ const testimonials = [
       "作為一家醫療器材公司，我們非常關注人工智能技術的應用，而 AI工具王 提供的 AI 模型租賃服務為我們帶來了很大的幫助。我們使用 AI工具王 的模型進行醫學影像分析和預測，這些模型非常精確，能夠幫助我們更好地診斷病情，提高治療效果。感謝 AI工具王 團隊的辛勤工作！", // 這位客戶的推薦內容，強調了 AI 技術對其公司業務的幫助。
     clientName: "劉小姐", // 客戶姓名。
     clientCompany: "XYZ 醫療器材有限公司", // 客戶公司名稱。
-    clientImage: "image/avatars/avatar1.webp", // 客戶頭像圖片的相對路徑。
+    clientImage: "/image/avatars/avatar1.webp", // 客戶頭像圖片的相對路徑。
   },
   {
     rating: 5, // 這位客戶也給出了滿分評分。
@@ -36,7 +36,7 @@ const testimonials = [
       "我們銀行一直在尋找能夠幫助我們提高風險控制和客戶服務的解決方案，而 AI工具王 提供的 AI 模型租賃服務正好滿足了我們的需求。我們使用 AI工具王 的模型進行客戶信用評估和詐騙檢測等任務，這些模型非常準確，能夠幫助我們更好地控制風險，提高客戶滿意度。非常感謝 AI工具王 團隊的支持！", // 客戶推薦內容，說明了 AI 模型在銀行風險控制和客戶服務中的應用。
     clientName: "黃先生", // 客戶姓名。
     clientCompany: "EFG 銀行", // 客戶公司名稱。
-    clientImage: "image/avatars/avatar2.webp", // 客戶頭像圖片的相對路徑。
+    clientImage: "/image/avatars/avatar2.webp", // 客戶頭像圖片的相對路徑。
   },
 ];
 

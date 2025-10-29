@@ -26,7 +26,7 @@ export default function TestimonialCard({
             // 使用 index 作為每個 img 標籤的 key 屬性，確保每個星星圖標有唯一標識符
             <img
               key={index}
-              src="image/icons/star.webp"
+              src="/image/icons/star.webp"
               alt="評價星星"
             />
           ))}

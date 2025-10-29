@@ -14,19 +14,19 @@ import ServicesCard from "../ui/ServicesCard";
 // 這些資訊將被傳遞給 ServicesCard 元件用來渲染服務卡片。
 const servicesCardInfo = [
   {
-    Icon: `image/icons/flash on.webp`, // 圖標的路徑，用來視覺化該服務的特徵（例如該服務的快速響應）。
+    Icon: `/image/icons/flash on.webp`, // 圖標的路徑，用來視覺化該服務的特徵（例如該服務的快速響應）。
     title: "快速", // 服務的標題，簡要概述該服務的主要特點。
     description:
       "我們先進的推理基礎設施提供了極短的響應時間，讓你的產品服務不間斷。", // 服務的詳細描述，介紹該服務的具體優勢。
   },
   {
-    Icon: `image/icons/auto awesome.webp`, // 此服務的圖標，表示靈活性。
+    Icon: `/image/icons/auto awesome.webp`, // 此服務的圖標，表示靈活性。
     title: "靈活", // 服務標題，突出服務的靈活性。
     description:
       "我們的服務可以根據您的需求進行靈活調整，同時還可以滿足不同項目和預算的需求。", // 服務描述，介紹該服務的彈性調整能力。
   },
   {
-    Icon: `image/icons/library add.webp`, // 服務的圖標，代表該服務的擴展性。
+    Icon: `/image/icons/library add.webp`, // 服務的圖標，代表該服務的擴展性。
     title: "擴充", // 服務標題，強調服務的擴展能力。
     description: "我們的服務支持多種擴充選項，可以滿足您的不斷增長的 AI 需求。", // 服務描述，介紹該服務的擴展選項。
   },

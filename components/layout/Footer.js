@@ -27,7 +27,7 @@ export default function Footer() {
           {/* 導航區域的右側是網站標誌，點擊後可返回首頁 */}
           <Link href="/" className={styles["site-logo"]}>
             {/* 使用 img 標籤顯示網站標誌圖片 */}
-            <img src="image/logo.webp" alt="AI 工具王網站標誌" />
+            <img src="/image/logo.webp" alt="AI 工具王網站標誌" />
           </Link>
         </nav>
       </section>
@@ -45,7 +45,7 @@ export default function Footer() {
         <a href="#" className={styles["back-to-top"]}>
           Back to top
           {/* 使用 img 標籤顯示向上的箭頭圖標 */}
-          <img src="image/icons/arrow upward.webp" alt="回到頁面頂部箭頭" />
+          <img src="/image/icons/arrow upward.webp" alt="回到頁面頂部箭頭" />
         </a>
       </section>
     </footer>

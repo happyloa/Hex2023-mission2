@@ -1,5 +1,5 @@
 .search-input {
-  background: url("~/public/image/icons/search.webp") no-repeat;
+  background: url("/image/icons/search.webp") no-repeat;
   background-size: 24px;
   background-position: 40px 20px;
   background-color: var(--black20);

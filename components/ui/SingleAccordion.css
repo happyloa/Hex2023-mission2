@@ -26,12 +26,12 @@
   width: 24px;
   height: 24px;
   content: "";
-  background-image: url("~/public/image/icons/add.webp");
+  background-image: url("/image/icons/add.webp");
   transition: all 0.3s ease-in-out;
 }
 
 .accordion-button:not(.collapsed):after {
-  background-image: url("~/public/image/icons/remove.webp");
+  background-image: url("/image/icons/remove.webp");
   transform: rotate(-180deg);
 }
 

@@ -24,7 +24,7 @@ export const metadata = {
   openGraph: {
     images: [
       {
-        url: "image/og-image.webp", // 用於社交媒體分享時顯示的圖片 URL
+        url: "/image/og-image.webp", // 用於社交媒體分享時顯示的圖片 URL
         width: 1200, // 圖片的寬度
         height: 630, // 圖片的高度
         alt: "2023 體驗營切版任務二", // 圖片的替代文字

@@ -18,7 +18,7 @@ export default function Header() {
         <Link href="/">
           {/* img 標籤用於顯示網站的標誌，應用了 site-logo 類別來控制標誌的樣式 */}
           <img
-            src="image/logo.webp"
+            src="/image/logo.webp"
             className={styles["site-logo"]}
             alt="AI 工具王網站標誌"
           />

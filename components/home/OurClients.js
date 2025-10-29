@@ -16,22 +16,22 @@ export default function OurClients() {
         {/* 使用 Marquee 組件創建第一個橫向滾動的標誌展示區域 */}
         <Marquee className={styles.marquee1}>
           {/* 渲染合作夥伴的標誌圖片，這些圖片將在 Marquee 組件內平滑滾動 */}
-          <img src="image/partner-logos/enterprise.webp" alt="合作夥伴 Enterprise" />
-          <img src="image/partner-logos/enterprise1.webp" alt="合作夥伴 Enterprise 1" />
-          <img src="image/partner-logos/enterprise2.webp" alt="合作夥伴 Enterprise 2" />
-          <img src="image/partner-logos/enterprise3.webp" alt="合作夥伴 Enterprise 3" />
-          <img src="image/partner-logos/enterprise4.webp" alt="合作夥伴 Enterprise 4" />
-          <img src="image/partner-logos/enterprise5.webp" alt="合作夥伴 Enterprise 5" />
+          <img src="/image/partner-logos/enterprise.webp" alt="合作夥伴 Enterprise" />
+          <img src="/image/partner-logos/enterprise1.webp" alt="合作夥伴 Enterprise 1" />
+          <img src="/image/partner-logos/enterprise2.webp" alt="合作夥伴 Enterprise 2" />
+          <img src="/image/partner-logos/enterprise3.webp" alt="合作夥伴 Enterprise 3" />
+          <img src="/image/partner-logos/enterprise4.webp" alt="合作夥伴 Enterprise 4" />
+          <img src="/image/partner-logos/enterprise5.webp" alt="合作夥伴 Enterprise 5" />
         </Marquee>
         {/* 使用 Marquee 組件創建第二個反向滾動的標誌展示區域 */}
         <Marquee direction="right">
           {/* 渲染另一組合作夥伴的標誌圖片，這些圖片將在 Marquee 組件內反向滾動 */}
-          <img src="image/partner-logos/enterprise6.webp" alt="合作夥伴 Enterprise 6" />
-          <img src="image/partner-logos/enterprise7.webp" alt="合作夥伴 Enterprise 7" />
-          <img src="image/partner-logos/enterprise8.webp" alt="合作夥伴 Enterprise 8" />
-          <img src="image/partner-logos/enterprise9.webp" alt="合作夥伴 Enterprise 9" />
-          <img src="image/partner-logos/enterprise11.webp" alt="合作夥伴 Enterprise 11" />
-          <img src="image/partner-logos/enterprise12.webp" alt="合作夥伴 Enterprise 12" />
+          <img src="/image/partner-logos/enterprise6.webp" alt="合作夥伴 Enterprise 6" />
+          <img src="/image/partner-logos/enterprise7.webp" alt="合作夥伴 Enterprise 7" />
+          <img src="/image/partner-logos/enterprise8.webp" alt="合作夥伴 Enterprise 8" />
+          <img src="/image/partner-logos/enterprise9.webp" alt="合作夥伴 Enterprise 9" />
+          <img src="/image/partner-logos/enterprise11.webp" alt="合作夥伴 Enterprise 11" />
+          <img src="/image/partner-logos/enterprise12.webp" alt="合作夥伴 Enterprise 12" />
         </Marquee>
       </div>
     </section>

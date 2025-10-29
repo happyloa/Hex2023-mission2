@@ -18,7 +18,7 @@ export default function AiToolsFilter({ onFilter }) {
       {/* 篩選標題及圖標 */}
       <div className={styles.filter}>
         篩選
-        <img src="image/icons/sliders-horizontal.webp" alt="篩選圖示" />
+        <img src="/image/icons/sliders-horizontal.webp" alt="篩選圖示" />
       </div>
 
       {/* 篩選標籤導航 */}
