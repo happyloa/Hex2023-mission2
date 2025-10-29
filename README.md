@@ -9,7 +9,7 @@
 
 ## 使用技術
 
-[Next.js 14](https://nextjs.org/)（React 加強版）
+- [Next.js 16](https://nextjs.org/)（React 19 強化版）
 
 ## 開發環境設置
 
@@ -77,12 +77,30 @@ components
 ├── ui                                   展示性元件庫
 ├── AiToolsFilter.js                     AI 工具過濾器元件
 ├── AiToolsFilter.module.css             AI 工具過濾器元件的樣式
-├── AiToolsList.js                       AI 工具清單元件
+├── AiToolsList.js                       AI 工具清單元件（支援注入資料來源）
 ├── AiToolsList.module.css               AI 工具清單元件的樣式
 ├── AiToolsPagination.js                 AI 工具分頁元件
 ├── AiToolsPagination.module.css         AI 工具分頁元件的樣式
 ├── AiToolsSearchForm.js                 AI 工具搜尋列元件
 └── AiToolsSearchForm.module.css         AI 工具搜尋列元件的樣式
+```
+
+## 共用資料（Data）
+
+位於 `data`
+
+```
+data
+└── aiToolsData.js                       AI 工具清單的預設資料來源
+```
+
+## 自訂 Hook
+
+位於 `hooks`
+
+```
+hooks
+└── useAiTools.js                        AI 工具清單共用的搜尋與篩選邏輯
 ```
 
 ## 靜態檔案
@@ -105,6 +123,10 @@ public
 
 ## 使用的套件 & 工具
 
+- [next@16](https://www.npmjs.com/package/next)
+- [react@19](https://www.npmjs.com/package/react)
+- [react-dom@19](https://www.npmjs.com/package/react-dom)
+- [eslint@9](https://www.npmjs.com/package/eslint)
 - [react-modal](https://www.npmjs.com/package/react-modal)
 - [React Fast Marquee](https://www.npmjs.com/package/react-fast-marquee)
 - [React Bootstrap Accordion](https://www.npmjs.com/package/react-bootstrap-accordion)

@@ -17,7 +17,11 @@ export default function Header() {
         {/* Link 組件用於實現點擊網站標誌後導航到首頁的功能 */}
         <Link href="/">
           {/* img 標籤用於顯示網站的標誌，應用了 site-logo 類別來控制標誌的樣式 */}
-          <img src="image/logo.webp" className={styles["site-logo"]} />
+          <img
+            src="image/logo.webp"
+            className={styles["site-logo"]}
+            alt="AI 工具王網站標誌"
+          />
         </Link>
         {/* nav 標籤定義了桌面端的主導航區塊，應用了 desktop-nav 類別來控制佈局 */}
         <nav className={styles["desktop-nav"]}>

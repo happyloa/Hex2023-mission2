@@ -4,7 +4,7 @@ import { Noto_Sans_TC } from "next/font/google";
 // 匯入全域的 CSS 檔案，這些樣式將應用於整個應用
 import "./globals.css";
 import "./scrollBar.css";
-import "./variables.css"
+import "./variables.css";
 
 // 使用 Noto_Sans_TC 字型的設定，指定子集為 "latin"，並設定字體的顯示屬性為 "swap"
 // "swap" 會確保在字體載入期間使用後備字體，字體載入完成後再進行切換
