@@ -19,16 +19,19 @@ export default function DecoAnimation({ align }) {
         {/* deco1、deco2 和 deco3 樣式類別分別控制這些圖片的具體位置或動畫效果 */}
         {/* hide-deco 類別用於初始隱藏圖案 */}
         <img
-          src="image/animation/deco.webp"
+          src="/image/animation/deco.webp"
           className={`${styles.deco1} ${styles["hide-deco"]}`}
+          alt="裝飾圖樣"
         />
         <img
-          src="image/animation/deco.webp"
+          src="/image/animation/deco.webp"
           className={`${styles.deco2} ${styles["hide-deco"]}`}
+          alt="裝飾圖樣"
         />
         <img
-          src="image/animation/deco.webp"
+          src="/image/animation/deco.webp"
           className={`${styles.deco3} ${styles["hide-deco"]}`}
+          alt="裝飾圖樣"
         />
       </div>
     </section>

@@ -24,7 +24,11 @@ export default function TestimonialCard({
           {/* 根據傳入的 rating 值生成相應數量的星星圖標 */}
           {Array.from({ length: rating }, (_, index) => (
             // 使用 index 作為每個 img 標籤的 key 屬性，確保每個星星圖標有唯一標識符
-            <img key={index} src="image/icons/star.webp" />
+            <img
+              key={index}
+              src="/image/icons/star.webp"
+              alt="評價星星"
+            />
           ))}
         </div>
         {/* 渲染客戶的評價內容 */}
@@ -32,7 +36,7 @@ export default function TestimonialCard({
         {/* client-wrapper div 包含了客戶的頭像和基本資訊 */}
         <div className={styles["client-wrapper"]}>
           {/* 渲染客戶的頭像 */}
-          <img src={clientImage} />
+          <img src={clientImage} alt={`${clientName} 頭像`} />
           {/* client-info div 包含了客戶的姓名和公司資訊 */}
           <div className={styles["client-info"]}>
             {/* strong 標籤用來加粗顯示客戶的姓名 */}

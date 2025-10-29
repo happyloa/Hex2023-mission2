@@ -4,7 +4,7 @@ import { Noto_Sans_TC } from "next/font/google";
 // 匯入全域的 CSS 檔案，這些樣式將應用於整個應用
 import "./globals.css";
 import "./scrollBar.css";
-import "./variables.css"
+import "./variables.css";
 
 // 使用 Noto_Sans_TC 字型的設定，指定子集為 "latin"，並設定字體的顯示屬性為 "swap"
 // "swap" 會確保在字體載入期間使用後備字體，字體載入完成後再進行切換
@@ -24,7 +24,7 @@ export const metadata = {
   openGraph: {
     images: [
       {
-        url: "image/og-image.webp", // 用於社交媒體分享時顯示的圖片 URL
+        url: "/image/og-image.webp", // 用於社交媒體分享時顯示的圖片 URL
         width: 1200, // 圖片的寬度
         height: 630, // 圖片的高度
         alt: "2023 體驗營切版任務二", // 圖片的替代文字

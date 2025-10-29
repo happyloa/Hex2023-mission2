@@ -74,7 +74,7 @@ export default function MobileNav() {
           <Link href="/" onClick={closeModal}>
             首頁
           </Link>
-          <Link href="/pricing" onClick={closeModal}>
+          <Link href="/pricing" onClick={closeModal} prefetch={false}>
             定價
           </Link>
         </nav>

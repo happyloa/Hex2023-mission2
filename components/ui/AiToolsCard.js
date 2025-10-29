@@ -43,7 +43,7 @@ export default function AiToolsCard({
         {/* span 標籤用來顯示工具的分類標籤 */}
         <span>{tag}</span>
         {/* 渲染分享圖標的 img 標籤，並設置 alt 屬性為 "分享" */}
-        <img src="image/icons/share.webp" alt="分享" />
+        <img src="/image/icons/share.webp" alt="分享" />
       </div>
     </li>
   );

@@ -41,7 +41,7 @@ export default function AiModelsPricingCard({
           {/* 按鈕文本 "開始使用" */}
           開始使用
           {/* 圖標表示行動呼籲 */}
-          <img src="image/icons/call made.webp" />
+          <img src="/image/icons/call made.webp" alt="開啟使用箭頭" />
         </div>
       </footer>
     </li>
