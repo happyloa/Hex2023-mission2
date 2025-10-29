@@ -128,7 +128,7 @@ public
 - [react-dom@19](https://www.npmjs.com/package/react-dom)
 - [eslint@9](https://www.npmjs.com/package/eslint)
 - [react-modal](https://www.npmjs.com/package/react-modal)
-- [React Fast Marquee](https://www.npmjs.com/package/react-fast-marquee)
 - [React Bootstrap Accordion](https://www.npmjs.com/package/react-bootstrap-accordion)
+- 原生 CSS 跑馬燈動畫
 - [TinyPNG](https://tinypng.com/)
 - [ChatGPT 4o](https://openai.com/)

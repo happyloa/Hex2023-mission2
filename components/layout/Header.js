@@ -30,7 +30,7 @@ export default function Header() {
             首頁
           </Link>
           {/* 導航連結指向定價頁面，應用了 link 類別來控制連結的樣式 */}
-          <Link href="/pricing" className={styles.link}>
+          <Link href="/pricing" className={styles.link} prefetch={false}>
             定價
           </Link>
         </nav>

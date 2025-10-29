@@ -19,7 +19,7 @@ export default function Footer() {
               {/* 將 "首頁" 文字包裹在 span 中，應用 link-underlined 類別來控制樣式 */}
               <span className={styles["link-underlined"]}>首頁</span>
             </Link>
-            <Link href="/pricing">
+            <Link href="/pricing" prefetch={false}>
               {/* 將 "定價" 文字包裹在 span 中，應用 link-underlined 類別來控制樣式 */}
               <span className={styles["link-underlined"]}>定價</span>
             </Link>

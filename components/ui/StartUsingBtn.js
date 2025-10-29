@@ -9,7 +9,7 @@ export default function StartUsingBtn({ withIcon = false }) {
   return (
     // 使用 Link 組件來實現頁面間導航，點擊按鈕時將導航到 "/pricing" 頁面
     // 同時應用了 styles.button 樣式類別來控制按鈕的外觀
-    <Link href="/pricing" className={styles.button}>
+    <Link href="/pricing" className={styles.button} prefetch={false}>
       {/* 顯示按鈕文本 "開始使用" */}
       開始使用
       {/* 如果 withIcon prop 為 true，則渲染一個圖標 */}
