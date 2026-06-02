@@ -9,7 +9,7 @@
 
 ## 使用技術
 
-- [Next.js 16.0.10](https://nextjs.org/)（React 19.2 版 App Router 專案）
+- [Next.js 16.2.7](https://nextjs.org/)（React 19.2 版 App Router 專案）
 
 ## 開發環境設置
 
@@ -38,11 +38,6 @@ $ npm install
 $ npm run dev
 ```
 
-在本機執行 Lint（新版 ESLint 9 flat config）：
-
-```sh
-$ npm run lint
-```
 
 在瀏覽器上輸入
 
@@ -129,11 +124,9 @@ public
 
 ## 使用的套件 & 工具
 
-- [next@16.0.10](https://www.npmjs.com/package/next)（React 19.2.3 內建支援）
-- [react@19.2.3](https://www.npmjs.com/package/react)
-- [react-dom@19.2.3](https://www.npmjs.com/package/react-dom)
-- [eslint@9.39.2](https://www.npmjs.com/package/eslint)
-- [eslint-config-next@16.0.10](https://www.npmjs.com/package/eslint-config-next)
+- [next@16.2.7](https://www.npmjs.com/package/next)（React 19.2.7 內建支援）
+- [react@19.2.7](https://www.npmjs.com/package/react)
+- [react-dom@19.2.7](https://www.npmjs.com/package/react-dom)
 - [react-modal](https://www.npmjs.com/package/react-modal)
 - [React Bootstrap Accordion](https://www.npmjs.com/package/react-bootstrap-accordion)
 - 原生 CSS 跑馬燈動畫
