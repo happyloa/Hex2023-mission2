@@ -38,7 +38,6 @@ $ npm install
 $ npm run dev
 ```
 
-
 在瀏覽器上輸入
 
 ```
@@ -127,8 +126,8 @@ public
 - [next@16.2.7](https://www.npmjs.com/package/next)（React 19.2.7 內建支援）
 - [react@19.2.7](https://www.npmjs.com/package/react)
 - [react-dom@19.2.7](https://www.npmjs.com/package/react-dom)
-- [react-modal](https://www.npmjs.com/package/react-modal)
-- [React Bootstrap Accordion](https://www.npmjs.com/package/react-bootstrap-accordion)
+- [react-modal@3.16.3](https://www.npmjs.com/package/react-modal)
+- [react-bootstrap-accordion@1.0.0](https://www.npmjs.com/package/react-bootstrap-accordion)
 - 原生 CSS 跑馬燈動畫
 - [TinyPNG](https://tinypng.com/)
 - [ChatGPT 4o](https://openai.com/)
