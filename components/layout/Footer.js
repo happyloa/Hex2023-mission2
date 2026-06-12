@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import styles from "./Footer.module.css";
 
@@ -26,10 +28,16 @@ export default function Footer() {
           <a href="#">Twitter</a>
           <a href="#">Instagram</a>
         </div>
-        <a href="#" className={styles["back-to-top"]}>
+        <button
+          onClick={() => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          }}
+          className={styles["back-to-top"]}
+          type="button"
+        >
           Back to top
-          <img src="/image/icons/arrow upward.webp" alt="回到頁面頂部箭頭" />
-        </a>
+          <img src="/image/icons/arrow upward.webp" alt="" aria-hidden="true" />
+        </button>
       </section>
     </footer>
   );

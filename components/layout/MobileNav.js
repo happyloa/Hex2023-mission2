@@ -18,12 +18,18 @@ export default function MobileNav() {
 
   return (
     <>
-      <img
-        src={isOpen ? "/image/icons/close.webp" : "/image/icons/menu.webp"}
-        alt={isOpen ? "關閉選單" : "開啟選單"}
+      <button
+        type="button"
         className={styles["mobile-nav-button"]}
         onClick={toggleModal}
-      />
+        aria-label={isOpen ? "關閉選單" : "開啟選單"}
+      >
+        <img
+          src={isOpen ? "/image/icons/close.webp" : "/image/icons/menu.webp"}
+          alt=""
+          aria-hidden="true"
+        />
+      </button>
       <Modal
         overlayClassName={{
           base: styles["nav-overlay"],

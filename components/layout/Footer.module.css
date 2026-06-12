@@ -80,6 +80,14 @@
   align-items: center;
   gap: 12px;
   margin: 0 0 0 auto;
+  border: none;
+  background: none;
+  color: inherit;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  padding: 0;
 }
 
 @media (max-width: 576px) {
