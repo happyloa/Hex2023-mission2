@@ -9,7 +9,7 @@
 
 ## 使用技術
 
-- [Next.js 16.2.7](https://nextjs.org/)（React 19.2 版 App Router 專案）
+- [Next.js 16.2.9](https://nextjs.org/)（React 19.2 版 App Router 專案）
 
 ## 開發環境設置
 
@@ -100,7 +100,7 @@ data
 
 ```
 hooks
-└── useAiTools.js                        AI 工具清單共用的搜尋與篩選邏輯
+└── useAiTools.js                        AI 工具清單共用的搜尋、篩選與排序邏輯
 ```
 
 ## 靜態檔案
@@ -123,11 +123,10 @@ public
 
 ## 使用的套件 & 工具
 
-- [next@16.2.7](https://www.npmjs.com/package/next)（React 19.2.7 內建支援）
+- [next@16.2.9](https://www.npmjs.com/package/next)（React 19.2.7 內建支援）
 - [react@19.2.7](https://www.npmjs.com/package/react)
 - [react-dom@19.2.7](https://www.npmjs.com/package/react-dom)
 - [react-modal@3.16.3](https://www.npmjs.com/package/react-modal)
-- [react-bootstrap-accordion@1.0.0](https://www.npmjs.com/package/react-bootstrap-accordion)
 - 原生 CSS 跑馬燈動畫
 - [TinyPNG](https://tinypng.com/)
 - [ChatGPT 4o](https://openai.com/)
