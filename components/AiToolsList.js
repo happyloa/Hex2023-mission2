@@ -11,7 +11,7 @@ import { aiToolsData } from "@/data/aiToolsData";
 import { useAiTools } from "@/hooks/useAiTools";
 
 export default function AiToolsList({ tools = aiToolsData }) {
-  const { filteredTools, handleSearch, handleFilter } = useAiTools(tools);
+  const { filteredTools, handleSearch, handleFilter, handleSort } = useAiTools(tools);
 
   return (
     <section className={styles.container} id="ai-tools">
@@ -19,7 +19,7 @@ export default function AiToolsList({ tools = aiToolsData }) {
 
       <main className={styles.wrapper}>
         <AiToolsSearchForm onSearch={handleSearch} />
-        <AiToolsFilter onFilter={handleFilter} />
+        <AiToolsFilter onFilter={handleFilter} onSort={handleSort} />
 
         <ul className={styles["card-wrapper"]}>
           {filteredTools.length > 0 ? (

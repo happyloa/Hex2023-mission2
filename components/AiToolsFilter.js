@@ -1,7 +1,7 @@
 import { useMemo, useState } from "react";
 import styles from "./AiToolsFilter.module.css";
 
-export default function AiToolsFilter({ onFilter }) {
+export default function AiToolsFilter({ onFilter, onSort }) {
   const [activeTag, setActiveTag] = useState("全部");
 
   // 集中管理篩選標籤設定
@@ -47,9 +47,12 @@ export default function AiToolsFilter({ onFilter }) {
         </ul>
       </nav>
 
-      <select className={styles["dropdown-filter"]}>
-        <option>由新到舊</option>
-        <option>由舊到新</option>
+      <select
+        className={styles["dropdown-filter"]}
+        onChange={(e) => onSort && onSort(e.target.value)}
+      >
+        <option value="由新到舊">由新到舊</option>
+        <option value="由舊到新">由舊到新</option>
       </select>
     </div>
   );
