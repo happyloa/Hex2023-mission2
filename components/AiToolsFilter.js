@@ -1,10 +1,7 @@
-import { useMemo, useState } from "react";
+import { useMemo } from "react";
 import styles from "./AiToolsFilter.module.css";
 
-export default function AiToolsFilter({ onFilter, onSort }) {
-  const [activeTag, setActiveTag] = useState("全部");
-
-  // 集中管理篩選標籤設定
+export default function AiToolsFilter({ activeTag, onFilter, onSort }) {
   const filterOptions = useMemo(
     () => [
       { label: "全部", value: "全部" },
@@ -17,11 +14,6 @@ export default function AiToolsFilter({ onFilter, onSort }) {
     ],
     []
   );
-
-  const handleFilterClick = (tag) => {
-    setActiveTag(tag);
-    onFilter(tag);
-  };
 
   return (
     <div className={styles["filter-container"]}>
@@ -39,7 +31,7 @@ export default function AiToolsFilter({ onFilter, onSort }) {
               <li
                 key={value}
                 className={isActive ? styles.active : ""}
-                onClick={() => handleFilterClick(value)}>
+                onClick={() => onFilter(value)}>
                 {label}
               </li>
             );
