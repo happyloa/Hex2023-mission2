@@ -31,9 +31,7 @@ export function useAiTools(initialTools) {
 
   return {
     filteredTools,
-    searchTerm,
     activeTag,
-    sortBy,
     handleSearch: setSearchTerm,
     handleFilter: setActiveTag,
     handleSort: setSortBy,
