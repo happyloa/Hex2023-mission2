@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import styles from "./Footer.module.css";
+import SocialLinks from "@/components/ui/SocialLinks";
 
 export default function Footer() {
   return (
@@ -23,11 +24,7 @@ export default function Footer() {
       </section>
       <section className={styles["site-infos"]}>
         <p>AI工具王 © 2023</p>
-        <div className={styles["social-links"]}>
-          <a href="#">Facebook</a>
-          <a href="#">Twitter</a>
-          <a href="#">Instagram</a>
-        </div>
+        <SocialLinks className={styles["social-links"]} />
         <button
           onClick={() => {
             window.scrollTo({ top: 0, behavior: "smooth" });

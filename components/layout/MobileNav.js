@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import Modal from "react-modal";
 import styles from "./MobileNav.module.css";
+import SocialLinks from "@/components/ui/SocialLinks";
 
 export default function MobileNav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -64,11 +65,7 @@ export default function MobileNav() {
         </nav>
         <footer className={styles["mobile-nav-footer"]}>
           <p>AI工具王 © 2023</p>
-          <div className={styles["social-links"]}>
-            <a href="#">Facebook</a>
-            <a href="#">Twitter</a>
-            <a href="#">Instagram</a>
-          </div>
+          <SocialLinks className={styles["social-links"]} />
         </footer>
       </Modal>
     </>
