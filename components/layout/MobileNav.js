@@ -5,6 +5,7 @@ import { useState } from "react";
 import Modal from "react-modal";
 import styles from "./MobileNav.module.css";
 import SocialLinks from "@/components/ui/SocialLinks";
+import { navLinks } from "@/data/navLinks";
 
 export default function MobileNav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -56,12 +57,11 @@ export default function MobileNav() {
           },
         }}>
         <nav className={styles["mobile-nav"]}>
-          <Link href="/" onClick={closeModal}>
-            首頁
-          </Link>
-          <Link href="/pricing" onClick={closeModal} prefetch={false}>
-            定價
-          </Link>
+          {navLinks.map(({ href, label, prefetch }) => (
+            <Link key={href} href={href} onClick={closeModal} prefetch={prefetch}>
+              {label}
+            </Link>
+          ))}
         </nav>
         <footer className={styles["mobile-nav-footer"]}>
           <p>AI工具王 © 2023</p>

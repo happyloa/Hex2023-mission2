@@ -3,6 +3,7 @@
 import Link from "next/link";
 import styles from "./Footer.module.css";
 import SocialLinks from "@/components/ui/SocialLinks";
+import { navLinks } from "@/data/navLinks";
 
 export default function Footer() {
   return (
@@ -10,12 +11,11 @@ export default function Footer() {
       <section className={styles.container}>
         <nav className={styles["footer-nav"]}>
           <div className={styles["links-wrapper"]}>
-            <Link href="/">
-              <span className={styles["link-underlined"]}>首頁</span>
-            </Link>
-            <Link href="/pricing" prefetch={false}>
-              <span className={styles["link-underlined"]}>定價</span>
-            </Link>
+            {navLinks.map(({ href, label, prefetch }) => (
+              <Link key={href} href={href} prefetch={prefetch}>
+                <span className={styles["link-underlined"]}>{label}</span>
+              </Link>
+            ))}
           </div>
           <Link href="/" className={styles["site-logo"]}>
             <img src="/image/logo.webp" alt="AI 工具王網站標誌" />

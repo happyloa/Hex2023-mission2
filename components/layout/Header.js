@@ -1,6 +1,7 @@
 import Link from "next/link";
 import styles from "./Header.module.css";
 import MobileNav from "./MobileNav";
+import { navLinks } from "@/data/navLinks";
 
 export default function Header() {
   return (
@@ -14,12 +15,11 @@ export default function Header() {
           />
         </Link>
         <nav className={styles["desktop-nav"]}>
-          <Link href="/" className={styles.link}>
-            首頁
-          </Link>
-          <Link href="/pricing" className={styles.link} prefetch={false}>
-            定價
-          </Link>
+          {navLinks.map(({ href, label, prefetch }) => (
+            <Link key={href} href={href} className={styles.link} prefetch={prefetch}>
+              {label}
+            </Link>
+          ))}
         </nav>
         <MobileNav />
       </div>
