@@ -30,12 +30,12 @@
   transition: all 0.3s ease-in-out;
 }
 
-.accordion-button:not(.collapsed):after {
+.accordion-button.open:after {
   background-image: url("/image/icons/remove.webp");
   transform: rotate(-180deg);
 }
 
-.accordion-button:not(.collapsed) {
+.accordion-button.open {
   color: var(--primary);
 }
 
