@@ -12,7 +12,7 @@ export function useAiTools(initialTools) {
     if (searchTerm) {
       const normalizedKeyword = searchTerm.toLowerCase();
       result = result.filter((tool) =>
-        tool.title.toLowerCase().includes(normalizedKeyword)
+        tool.title.toLowerCase().includes(normalizedKeyword),
       );
     }
 
@@ -37,4 +37,3 @@ export function useAiTools(initialTools) {
     handleSort: setSortBy,
   };
 }
-

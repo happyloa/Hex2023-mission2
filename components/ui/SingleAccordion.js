@@ -20,4 +20,3 @@ export default function SingleAccordion({ title, content }) {
     </div>
   );
 }
-
