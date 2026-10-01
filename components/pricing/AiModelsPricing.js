@@ -34,8 +34,8 @@ export default function AiModelsPricing() {
     <Container>
       <h2 className={styles.heading}>定價</h2>
       <ul className={styles["card-wrapper"]}>
-        {aiModelsInfo.map((data, index) => (
-          <AiModelsPricingCard key={index} {...data} />
+        {aiModelsInfo.map((data) => (
+          <AiModelsPricingCard key={data.title} {...data} />
         ))}
       </ul>
     </Container>

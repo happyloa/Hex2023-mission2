@@ -19,14 +19,15 @@ import Footer from "@/components/layout/Footer";
 
 // 設定應用的 metadata，包括標題、描述和 openGraph 資訊，用於 SEO 和社交分享
 export const metadata = {
+  metadataBase: new URL("https://hex2023.worksbyaaron.com"),
   title: "2023 體驗營切版任務二",
   description: "2023 體驗營切版任務二 by Aaron",
   openGraph: {
     images: [
       {
         url: "/image/og-image.webp", // 用於社交媒體分享時顯示的圖片 URL
-        width: 1200, // 圖片的寬度
-        height: 630, // 圖片的高度
+        width: 1792, // 圖片的寬度
+        height: 1024, // 圖片的高度
         alt: "2023 體驗營切版任務二", // 圖片的替代文字
       },
     ],
@@ -43,7 +44,7 @@ export default function RootLayout({ children }) {
         {/* 包含應用的 Header 元件，出現在頁面頂部 */}
         <Header />
         {/* 渲染子內容，即每個頁面的具體內容 */}
-        {children}
+        <main>{children}</main>
         {/* 包含應用的 Footer 元件，出現在頁面底部 */}
         <Footer />
       </body>

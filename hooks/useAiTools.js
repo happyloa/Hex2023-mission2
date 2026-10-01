@@ -4,16 +4,15 @@ export function useAiTools(initialTools) {
   const [searchTerm, setSearchTerm] = useState("");
   const [activeTag, setActiveTag] = useState("全部");
   const [sortBy, setSortBy] = useState("由新到舊");
+  const [page, setPage] = useState(1);
 
   const filteredTools = useMemo(() => {
     let result = [...initialTools];
 
     // 1. 依關鍵字篩選
-    if (searchTerm) {
-      const normalizedKeyword = searchTerm.toLowerCase();
-      result = result.filter((tool) =>
-        tool.title.toLowerCase().includes(normalizedKeyword),
-      );
+    const normalizedKeyword = searchTerm.trim().toLowerCase();
+    if (normalizedKeyword) {
+      result = result.filter((tool) => tool.title.toLowerCase().includes(normalizedKeyword));
     }
 
     // 2. 依標籤篩選
@@ -29,11 +28,30 @@ export function useAiTools(initialTools) {
     return result;
   }, [initialTools, searchTerm, activeTag, sortBy]);
 
+  const pageCount = Math.max(1, Math.ceil(filteredTools.length / 6));
+  const currentPage = Math.min(page, pageCount);
+  const visibleTools = filteredTools.slice((currentPage - 1) * 6, currentPage * 6);
+
   return {
     filteredTools,
     activeTag,
-    handleSearch: setSearchTerm,
-    handleFilter: setActiveTag,
-    handleSort: setSortBy,
+    searchTerm,
+    sortBy,
+    currentPage,
+    pageCount,
+    visibleTools,
+    handleSearch: (value) => {
+      setSearchTerm(value);
+      setPage(1);
+    },
+    handleFilter: (value) => {
+      setActiveTag(value);
+      setPage(1);
+    },
+    handleSort: (value) => {
+      setSortBy(value);
+      setPage(1);
+    },
+    handlePageChange: (value) => setPage(Math.max(1, Math.min(value, pageCount))),
   };
 }

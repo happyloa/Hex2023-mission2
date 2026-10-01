@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import styles from "./Header.module.css";
 import MobileNav from "./MobileNav";
@@ -8,7 +9,10 @@ export default function Header() {
     <header className={styles.container}>
       <div className={styles.wrapper}>
         <Link href="/">
-          <img
+          <Image
+            width={245}
+            height={40}
+            unoptimized
             src="/image/logo.webp"
             className={styles["site-logo"]}
             alt="AI 工具王網站標誌"
@@ -16,7 +20,7 @@ export default function Header() {
         </Link>
         <nav className={styles["desktop-nav"]}>
           {navLinks.map(({ href, label, prefetch }) => (
-            <Link key={href} href={href} className={styles.link} prefetch={prefetch}>
+            <Link key={href} href={href} prefetch={prefetch}>
               {label}
             </Link>
           ))}

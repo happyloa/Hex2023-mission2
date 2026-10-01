@@ -8,7 +8,12 @@
   gap: 4px;
 }
 
-.pagination ul li a {
+.pagination button {
+  background: transparent;
+  border: 0;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,12 +23,13 @@
   transition: all 0.3s ease-in-out;
 }
 
-.pagination ul li a:hover {
+.pagination button:hover:not(:disabled),
+.pagination button[aria-current="page"] {
   background-color: var(--black);
   color: var(--white);
 }
 
-.pagination ul li:first-of-type a {
-  background-color: var(--black);
-  color: var(--white);
+.pagination button:disabled {
+  opacity: 0.5;
+  cursor: default;
 }

@@ -33,9 +33,9 @@ export default function Testimonial() {
   return (
     <Container>
       <ul className={styles["card-wrapper"]}>
-        {testimonials.map((testimonial, index) => (
+        {testimonials.map((testimonial) => (
           <TestimonialCard
-            key={index}
+            key={testimonial.clientName}
             rating={testimonial.rating}
             content={testimonial.content}
             clientName={testimonial.clientName}

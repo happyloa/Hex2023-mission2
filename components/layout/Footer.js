@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+
 import Link from "next/link";
 import styles from "./Footer.module.css";
 import SocialLinks from "@/components/ui/SocialLinks";
@@ -18,7 +20,13 @@ export default function Footer() {
             ))}
           </div>
           <Link href="/" className={styles["site-logo"]}>
-            <img src="/image/logo.webp" alt="AI 工具王網站標誌" />
+            <Image
+              width={245}
+              height={40}
+              unoptimized
+              src="/image/logo.webp"
+              alt="AI 工具王網站標誌"
+            />
           </Link>
         </nav>
       </section>
@@ -33,7 +41,14 @@ export default function Footer() {
           type="button"
         >
           Back to top
-          <img src="/image/icons/arrow upward.webp" alt="" aria-hidden="true" />
+          <Image
+            width={16}
+            height={16}
+            unoptimized
+            src="/image/icons/arrow upward.webp"
+            alt=""
+            aria-hidden="true"
+          />
         </button>
       </section>
     </footer>

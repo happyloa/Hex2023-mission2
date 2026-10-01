@@ -1,9 +1,9 @@
 export default function SocialLinks({ className }) {
   return (
     <div className={className}>
-      <a href="#">Facebook</a>
-      <a href="#">Twitter</a>
-      <a href="#">Instagram</a>
+      <span>Facebook</span>
+      <span>Twitter</span>
+      <span>Instagram</span>
     </div>
   );
 }

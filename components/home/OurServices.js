@@ -6,14 +6,12 @@ const servicesCardInfo = [
   {
     Icon: `/image/icons/flash on.webp`,
     title: "快速",
-    description:
-      "我們先進的推理基礎設施提供了極短的響應時間，讓你的產品服務不間斷。",
+    description: "我們先進的推理基礎設施提供了極短的響應時間，讓你的產品服務不間斷。",
   },
   {
     Icon: `/image/icons/auto awesome.webp`,
     title: "靈活",
-    description:
-      "我們的服務可以根據您的需求進行靈活調整，同時還可以滿足不同項目和預算的需求。",
+    description: "我們的服務可以根據您的需求進行靈活調整，同時還可以滿足不同項目和預算的需求。",
   },
   {
     Icon: `/image/icons/library add.webp`,
@@ -39,9 +37,9 @@ export default function OurServices() {
       </div>
 
       <ul className={styles["card-wrapper"]}>
-        {servicesCardInfo.map((service, idx) => (
+        {servicesCardInfo.map((service) => (
           <ServicesCard
-            key={idx}
+            key={service.title}
             src={service.Icon}
             title={service.title}
             description={service.description}

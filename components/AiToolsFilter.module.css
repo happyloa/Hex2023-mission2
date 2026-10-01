@@ -30,22 +30,23 @@
 }
 
 .navigation ul li {
+  flex-shrink: 0;
+}
+
+.navigation button {
+  background: transparent;
+  border: 0;
+  color: inherit;
+  font: inherit;
   border-radius: 16px;
   cursor: pointer;
   padding: 8px 16px;
   text-wrap: nowrap;
-  flex-shrink: 0;
   transition: all 0.3s ease-in-out;
 }
 
-.navigation ul li:hover {
-  background-color: var(--black20);
-  color: var(--black);
-  font-weight: 700;
-}
-
-/* 工具樣式，用來套用在目前啟用的標籤上 */
-.active {
+.navigation button:hover,
+.navigation button.active {
   background-color: var(--black20);
   color: var(--black);
   font-weight: 700;

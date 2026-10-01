@@ -67,3 +67,12 @@
     max-width: 117px;
   }
 }
+
+@media (prefers-reduced-motion: reduce) {
+  .deco1,
+  .deco2,
+  .deco3 {
+    animation: none;
+    transform: none;
+  }
+}

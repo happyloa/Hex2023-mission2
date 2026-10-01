@@ -1,18 +1,17 @@
 /* 工具樣式 */
 .card-padding {
-  padding: 20px 32px !important;
+  padding: 20px 32px;
 }
 
 /* 工具樣式 */
 .d-flex {
-  display: flex !important;
-  justify-content: space-between !important;
+  display: flex;
+  justify-content: space-between;
 }
 
 .card {
   border: 1px solid var(--black20);
   border-radius: 16px;
-  cursor: pointer;
 }
 
 .img-wrapper {

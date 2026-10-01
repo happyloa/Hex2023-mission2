@@ -1,5 +1,3 @@
-"use client";
-
 import styles from "./FAQ.module.css";
 import SingleAccordion from "../ui/SingleAccordion";
 
@@ -39,12 +37,8 @@ export default function FAQ() {
           <h2>常見問題</h2>
         </div>
         <div className={styles["faq-wrapper"]}>
-          {faqContent.map((item, idx) => (
-            <SingleAccordion
-              key={idx}
-              title={item.title}
-              content={item.content}
-            />
+          {faqContent.map((item) => (
+            <SingleAccordion key={item.title} title={item.title} content={item.content} />
           ))}
         </div>
       </div>

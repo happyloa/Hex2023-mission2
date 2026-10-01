@@ -1,3 +1,4 @@
+import Image from "next/image";
 import styles from "./OurClients.module.css";
 
 // 跑馬燈合作夥伴標誌設定
@@ -43,8 +44,11 @@ export default function OurClients() {
                 {[...logos, ...logos].map((logo, index) => {
                   const isDuplicate = index >= logos.length;
                   return (
-                    <img
-                      key={`${id}-${index}`}
+                    <Image
+                      width={logo.src.endsWith("/enterprise.webp") ? 78.4 : 128}
+                      height={32}
+                      unoptimized
+                      key={`${logo.src}-${isDuplicate ? "copy" : "original"}`}
                       src={logo.src}
                       alt={isDuplicate ? "" : logo.alt}
                       aria-hidden={isDuplicate ? true : undefined}

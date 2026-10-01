@@ -1,22 +1,14 @@
-import { useState } from "react";
 import styles from "./AiToolsSearchForm.module.css";
 
-export default function AiToolsSearchForm({ onSearch }) {
-  const [searchTerm, setSearchTerm] = useState("");
-
-  const handleInputChange = (event) => {
-    const value = event.target.value;
-    setSearchTerm(value);
-    onSearch(value);
-  };
-
+export default function AiToolsSearchForm({ searchTerm, onSearch }) {
   return (
     <input
-      type="text"
+      type="search"
+      aria-label="搜尋 AI 工具"
       className={styles["search-input"]}
       placeholder="輸入關鍵字搜尋"
       value={searchTerm}
-      onChange={handleInputChange}
+      onChange={(event) => onSearch(event.target.value)}
     />
   );
 }
