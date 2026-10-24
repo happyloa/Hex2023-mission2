@@ -13,7 +13,7 @@ AI 工具每頁顯示 6 筆，資料超過一頁才顯示分頁。排序依資�
 
 ## 使用技術
 
-- [Next.js 16.3.8](https://nextjs.org/) App Router、React / React DOM 19.3.0
+- [Next.js](https://nextjs.org/) App Router、React / React DOM
 - CSS Modules、`next/font` 字型與 `next/image` 圖片
 - 原生 `<dialog>` 行動選單，支援焦點管理、Escape 關閉與背景捲動鎖定
 - 使用 Next.js 預設 Turbopack 配置，首頁與定價頁在建置時預先產生
@@ -74,7 +74,7 @@ npm run build
 npm test
 ```
 
-Biome 檢查 JavaScript、CSS 與無障礙問題；Knip 檢查未使用的檔案、匯出與套件，使用 `jsconfig.json` 解析路徑別名。兩者皆為開發依賴。
+Biome 檢查 JavaScript、CSS、JSON 與無障礙問題；Knip 檢查未使用的檔案、匯出與套件，使用 `jsconfig.json` 解析路徑別名。
 
 Playwright 在本機正式建置上驗證桌面與手機版的兩個頁面、圖片載入、搜尋／篩選／排序、FAQ 和行動選單。測試使用 `127.0.0.1:3100`，請先完成建置；它不驗證遠端部署。測試產物位於 `test-results/`，不提交到 Git。
 
@@ -156,12 +156,12 @@ public
 
 ## 使用的套件 & 工具
 
-- [next@16.3.8](https://www.npmjs.com/package/next)
-- [react@19.3.0](https://www.npmjs.com/package/react)
-- [react-dom@19.3.0](https://www.npmjs.com/package/react-dom)
-- [@biomejs/biome@2.5.15](https://www.npmjs.com/package/@biomejs/biome)（開發依賴）
-- [knip@6.39.0](https://www.npmjs.com/package/knip)（開發依賴）
-- [@playwright/test@1.63.0](https://www.npmjs.com/package/@playwright/test)（開發依賴）
+- [next@16.4.3](https://www.npmjs.com/package/next)
+- [react@19.3.1](https://www.npmjs.com/package/react)
+- [react-dom@19.3.1](https://www.npmjs.com/package/react-dom)
+- [@biomejs/biome@2.6.3](https://www.npmjs.com/package/@biomejs/biome)（開發依賴）
+- [knip@6.43.0](https://www.npmjs.com/package/knip)（開發依賴）
+- [@playwright/test@1.64.1](https://www.npmjs.com/package/@playwright/test)（開發依賴）
 - `package.json` 使用 `postcss: ^8.5.28` override，維持 Next.js 的 PostCSS 在已修補範圍；升級 Next.js 時重新檢查是否仍需要
 - 原生 CSS 跑馬燈動畫
 
