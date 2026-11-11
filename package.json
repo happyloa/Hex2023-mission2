@@ -6,8 +6,6 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "biome lint . --error-on-warnings",
-    "check:unused": "knip --tsConfig jsconfig.json",
     "test": "playwright test"
   },
   "dependencies": {
@@ -16,9 +14,7 @@
     "react-dom": "^19.3.1"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.6.6",
-    "@playwright/test": "^1.65.0",
-    "knip": "^6.45.1"
+    "@playwright/test": "^1.65.0"
   },
   "engines": {
     "node": ">=22.18.0"

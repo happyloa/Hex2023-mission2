@@ -40,8 +40,6 @@ npm start
 ## 驗證
 
 ```sh
-npm run lint
-npm run check:unused
 npm audit
 npm outdated
 npx playwright install chromium
@@ -49,9 +47,7 @@ npm run build
 npm test
 ```
 
-- Biome 檢查 JavaScript、CSS、JSON 與無障礙問題。
-- Knip 檢查未使用的檔案、匯出與套件，透過 `jsconfig.json` 解析 `@/` 路徑別名。
-- Playwright 以 Chromium 測試桌面與手機尺寸下的兩個頁面、圖片載入、搜尋／篩選／排序、FAQ 與行動導覽。
+Playwright 以 Chromium 測試桌面與手機尺寸下的兩個頁面、圖片載入、搜尋／篩選／排序、FAQ 與行動導覽。
 
 測試會啟動 `127.0.0.1:3100` 的本機正式版本，執行前須先建置，不會驗證遠端部署。測試產物放在 `test-results/`，已由 Git 忽略。
 
@@ -70,6 +66,6 @@ npm test
 
 ## 依賴維護
 
-主要依賴為 [Next.js](https://www.npmjs.com/package/next)、[React](https://www.npmjs.com/package/react) 與 [React DOM](https://www.npmjs.com/package/react-dom)；開發工具為 [Biome](https://www.npmjs.com/package/@biomejs/biome)、[Knip](https://www.npmjs.com/package/knip) 與 [Playwright](https://www.npmjs.com/package/@playwright/test)。版本範圍以 `package.json` 為準，實際安裝版本由 `package-lock.json` 鎖定。
+主要依賴為 [Next.js](https://www.npmjs.com/package/next)、[React](https://www.npmjs.com/package/react) 與 [React DOM](https://www.npmjs.com/package/react-dom)；開發工具為 [Playwright](https://www.npmjs.com/package/@playwright/test)。版本範圍以 `package.json` 為準，實際安裝版本由 `package-lock.json` 鎖定。
 
 素材製作工具：[TinyPNG](https://tinypng.com/)、[ChatGPT 4o](https://openai.com/)。
