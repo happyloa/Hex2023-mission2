@@ -17,7 +17,7 @@
 
 ## 本機開發
 
-需要 Node.js 22.18 以上，建議使用 Node.js 24 LTS。建置時需連線下載 Google Fonts 的 Noto Sans TC。
+需要 Node.js 22.18 以上，建議使用 Node.js 26 LTS。建置時需連線下載 Google Fonts 的 Noto Sans TC。
 
 ```sh
 git clone https://github.com/happyloa/Hex2023-mission2.git
@@ -57,21 +57,19 @@ npm test
 
 ## 專案結構
 
-| 路徑 | 內容 |
-| --- | --- |
-| `app/` | 首頁、定價頁、根佈局、metadata 與全域樣式 |
-| `components/` | 工具清單、搜尋、篩選、分頁及各頁面元件；樣式與元件並列 |
-| `components/layout/` | 共用導覽、行動選單、頁尾與容器 |
-| `components/ui/` | 卡片、FAQ 手風琴及其他展示元件 |
-| `data/` | AI 工具展示資料與共用導覽連結 |
+| 路徑                  | 內容                                                   |
+| --------------------- | ------------------------------------------------------ |
+| `app/`                | 首頁、定價頁、根佈局、metadata 與全域樣式              |
+| `components/`         | 工具清單、搜尋、篩選、分頁及各頁面元件；樣式與元件並列 |
+| `components/layout/`  | 共用導覽、行動選單、頁尾與容器                         |
+| `components/ui/`      | 卡片、FAQ 手風琴及其他展示元件                         |
+| `data/`               | AI 工具展示資料與共用導覽連結                          |
 | `hooks/useAiTools.js` | 工具搜尋、篩選、排序與分頁邏輯；清單元件可注入資料來源 |
-| `public/image/` | 工具縮圖、動畫圖案、頭像、圖示、合作夥伴標誌與社群縮圖 |
-| `tests/site.spec.js` | Playwright 瀏覽器測試 |
+| `public/image/`       | 工具縮圖、動畫圖案、頭像、圖示、合作夥伴標誌與社群縮圖 |
+| `tests/site.spec.js`  | Playwright 瀏覽器測試                                  |
 
 ## 依賴維護
 
 主要依賴為 [Next.js](https://www.npmjs.com/package/next)、[React](https://www.npmjs.com/package/react) 與 [React DOM](https://www.npmjs.com/package/react-dom)；開發工具為 [Biome](https://www.npmjs.com/package/@biomejs/biome)、[Knip](https://www.npmjs.com/package/knip) 與 [Playwright](https://www.npmjs.com/package/@playwright/test)。版本範圍以 `package.json` 為準，實際安裝版本由 `package-lock.json` 鎖定。
-
-目前透過 `postcss: ^8.5.32` override 更新 Next.js 的 PostCSS 間接依賴。升級 Next.js 時，應重新檢查是否仍需保留。
 
 素材製作工具：[TinyPNG](https://tinypng.com/)、[ChatGPT 4o](https://openai.com/)。
