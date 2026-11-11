@@ -73,8 +73,8 @@ export default function MobileNav() {
           </button>
         </div>
         <nav className={styles["mobile-nav"]}>
-          {navLinks.map(({ href, label, prefetch }) => (
-            <Link key={href} href={href} onClick={closeMenu} prefetch={prefetch}>
+          {navLinks.map(({ href, label }) => (
+            <Link key={href} href={href} onClick={closeMenu}>
               {label}
             </Link>
           ))}

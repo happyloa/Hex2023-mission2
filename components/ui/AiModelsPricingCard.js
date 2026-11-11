@@ -24,7 +24,7 @@ export default function AiModelsPricingCard({ title, features = [], price, unit 
             height={24}
             unoptimized
             src="/image/icons/call made.webp"
-            alt="開啟使用箭頭"
+            alt=""
           />
         </div>
       </footer>

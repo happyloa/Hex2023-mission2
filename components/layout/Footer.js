@@ -13,8 +13,8 @@ export default function Footer() {
       <section className={styles.container}>
         <nav className={styles["footer-nav"]}>
           <div className={styles["links-wrapper"]}>
-            {navLinks.map(({ href, label, prefetch }) => (
-              <Link key={href} href={href} prefetch={prefetch}>
+            {navLinks.map(({ href, label }) => (
+              <Link key={href} href={href}>
                 <span className={styles["link-underlined"]}>{label}</span>
               </Link>
             ))}

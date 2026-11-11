@@ -11,7 +11,7 @@ export default function TestimonialCard({
   return (
     <li className={styles.card}>
       <article className={styles.wrapper}>
-        <div className={styles["rating-wrapper"]}>
+        <div className={styles["rating-wrapper"]} role="img" aria-label={`${rating} 顆星評價`}>
           {Array.from({ length: rating }, (_, index) => index + 1).map((star) => (
             <Image
               width={16}
@@ -19,7 +19,7 @@ export default function TestimonialCard({
               unoptimized
               key={star}
               src="/image/icons/star.webp"
-              alt="評價星星"
+              alt=""
             />
           ))}
         </div>

@@ -4,7 +4,7 @@ import styles from "./StartUsingBtn.module.css";
 
 export default function StartUsingBtn({ withIcon = false }) {
   return (
-    <Link href="/pricing" className={styles.button} prefetch={false}>
+    <Link href="/pricing" className={styles.button}>
       開始使用
       {withIcon && (
         <Image
@@ -12,7 +12,7 @@ export default function StartUsingBtn({ withIcon = false }) {
           height={24}
           unoptimized
           src="/image/icons/call made.webp"
-          alt="行動呼籲"
+          alt=""
           className={styles.icon}
         />
       )}

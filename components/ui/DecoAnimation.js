@@ -15,7 +15,7 @@ export default function DecoAnimation({ align }) {
           unoptimized
           src="/image/animation/deco.webp"
           className={`${styles.deco1} ${styles["hide-deco"]}`}
-          alt="裝飾圖樣"
+          alt=""
         />
         <Image
           width={180}
@@ -23,7 +23,7 @@ export default function DecoAnimation({ align }) {
           unoptimized
           src="/image/animation/deco.webp"
           className={`${styles.deco2} ${styles["hide-deco"]}`}
-          alt="裝飾圖樣"
+          alt=""
         />
         <Image
           width={180}
@@ -31,7 +31,7 @@ export default function DecoAnimation({ align }) {
           unoptimized
           src="/image/animation/deco.webp"
           className={`${styles.deco3} ${styles["hide-deco"]}`}
-          alt="裝飾圖樣"
+          alt=""
         />
       </div>
     </section>
